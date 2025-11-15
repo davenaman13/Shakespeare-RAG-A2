@@ -10,42 +10,42 @@ The system's final persona is the "**Expert Shakespearean Scholar**," dedicated 
 
 The application is deployed using Docker Compose, orchestrating three services connected via an internal Docker network:
 
-                                                +----------+
-                                                |  User    |
-                                                | (Student)|
-                                                +----+-----+
-                                                    | (Query via Browser)
-                                                    |
-                                                +----v-----+
-                                                | Streamlit| (Service 1: Frontend)
-                                                | (Port 8501)|
-                                                +----+-----+
-                                                    | (Internal API Call)
-                                                    |
-                                                +----v-----+
-                                                | FastAPI  | (Service 2: Backend/Orchestrator)
-                                                | (Port 8000)|
-                                                +----+-----+
-                                                    | 1. Embed Query (BGE-1.5)
-                                                    | 2. Retrieve Context
-                                                +----v-----+  +-----------------+
-                                                | ChromaDB |  | Gemini-2.5-Flash| (External LLM Service)
-                                                | (Vector Store)|  +-------^---------+
-                                                +----------+          | 3. Send Context + Prompt
-                                                    ^              |
-                                                    +--------------+
-                                                    | 4. Final Answer Generation
-                                                +----+-----+
-                                                | FastAPI  |
-                                                +----+-----+
-                                                    | (Structured JSON Response)
-                                                +----v-----+
-                                                | Streamlit|
-                                                +----+-----+
-                                                    | (Rendered Answer)
-                                                +----v-----+
-                                                |  User    |
-                                                +----------+
+                                        +----------+
+                                        |  User    |
+                                        | (Student)|
+                                        +----+-----+
+                                            | (Query via Browser)
+                                            |
+                                        +----v-----+
+                                        | Streamlit| (Service 1: Frontend)
+                                        | (Port 8501)|
+                                        +----+-----+
+                                            | (Internal API Call)
+                                            |
+                                        +----v-----+
+                                        | FastAPI  | (Service 2: Backend/Orchestrator)
+                                        | (Port 8000)|
+                                        +----+-----+
+                                            | 1. Embed Query (BGE-1.5)
+                                            | 2. Retrieve Context
+                                        +----v-----+  +-----------------+
+                                        | ChromaDB |  | Gemini-2.5-Flash| (External LLM Service)
+                                        | (Vector Store)|  +-------^---------+
+                                        +----------+          | 3. Send Context + Prompt
+                                            ^              |
+                                            +--------------+
+                                            | 4. Final Answer Generation
+                                        +----+-----+
+                                        | FastAPI  |
+                                        +----+-----+
+                                            | (Structured JSON Response)
+                                        +----v-----+
+                                        | Streamlit|
+                                        +----+-----+
+                                            | (Rendered Answer)
+                                        +----v-----+
+                                        |  User    |
+                                        +----------+
 
 ## 3. Design Justification
 
