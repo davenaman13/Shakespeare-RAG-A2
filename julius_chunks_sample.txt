@@ -1,0 +1,120 @@
+--- actNone_sceneNone_speech1 | STAGE | Act 1 Scene 1 ---
+Synopsis Caesar’s assassination is just the halfway point of Julius Caesar. The first part of the play leads to his death; the second portrays the consequences. As the action begins, Rome prepares for Caesar’s triumphal entrance. Brutus, Caesar’s friend and ally, fears that Caesar will become king, destroying the republic. Cassius and others convince Brutus to join a conspiracy to kill Caesar. On the day of the assassination, Caesar plans to stay home at the urging of his wife, Calphurnia. A conspirator, Decius Brutus, persuades him to go to the Senate with the other conspirators and his friend, Mark Antony. At the Senate, the conspirators stab Caesar to death. Antony uses a funeral oration to turn the citizens of Rome against them. Brutus and Cassius escape as Antony joins forces with Octavius Caesar. Encamped with their armies, Brutus and Cassius quarrel, then agree to march on Antony and Octavius. In the battle which follows, Cassius, misled by erroneous reports of loss, persuades a slave to kill him; Brutus’s army is defeated. Brutus commits suicide, praised by Antony as “the noblest Roman of them all.”
+
+--- actNone_sceneNone_speech2 | STAGE | Act 1 Scene 1 ---
+Characters in the Play
+
+--- actNone_sceneNone_speech3 | Calphurnia | Act 1 Scene 1 ---
+, his wife Servant to them
+
+--- actNone_sceneNone_speech4 | Portia | Act 1 Scene 1 ---
+, his wife
+
+--- actNone_sceneNone_speech5 | Lucius | Act 1 Scene 1 ---
+, their servant
+
+--- actNone_sceneNone_speech6 | Cinna | Act 1 Scene 1 ---
+patricians who, with Brutus,
+
+--- actNone_sceneNone_speech7 | Decius Brutus | Act 1 Scene 1 ---
+conspire against Caesar senators tribunes
+
+--- actNone_sceneNone_speech10 | Mark Antony | Act 1 Scene 1 ---
+rulers of Rome in Acts and 5
+
+--- actNone_sceneNone_speech11 | Octavius | Act 1 Scene 1 ---
+Servant to Antony Servant to Octavius
+
+--- actNone_sceneNone_speech12 | Claudius | Act 1 Scene 1 ---
+officers and soldiers in the
+
+--- actNone_sceneNone_speech13 | Young Cato | Act 1 Scene 1 ---
+armies of Brutus and Cassius (nonspeaking) (nonspeaking)
+
+--- actNone_sceneNone_speech16 | STAGE | Act 1 Scene 1 ---
+First, Second, Third, and Fourth Plebeians the poet
+
+--- actNone_sceneNone_speech18 | Pindarus | Act 1 Scene 1 ---
+, slave to Cassius, freed upon Cassius’s death First, Second, Third, and Fourth Soldiers in Brutus’s army Another Poet First and Second Soldiers in Antony’s army Citizens, Senators, Petitioners, Plebeians, Soldiers
+
+--- act1_sceneNone_speech19 | STAGE | Act 1 Scene 1 ---
+Enter Flavius, Marullus, and certain Commoners, including a Carpenter and a Cobbler, over the stage.
+
+--- act1_sceneNone_speech20 | Flavius | Act 1 Scene 1 ---
+Hence! Home, you idle creatures, get you home! Is this a holiday? What, know you not, Being mechanical, you ought not walk Upon a laboring day without the sign Of your profession?—Speak, what trade art thou? 5
+
+--- act1_sceneNone_speech21 | Carpenter   W | Act 1 Scene 1 ---
+hy, sir, a carpenter.
+
+--- act1_sceneNone_speech22 | Marullus | Act 1 Scene 1 ---
+Where is thy leather apron and thy rule? What dost thou with thy best apparel on?— You, sir, what trade are you?
+
+--- act1_sceneNone_speech23 | Cobbler   T | Act 1 Scene 1 ---
+ruly, sir, in respect of a fine workman, I am but, as you would say, a cobbler.
+
+--- act1_sceneNone_speech24 | Marullus | Act 1 Scene 1 ---
+But what trade art thou? Answer me directly.
+
+--- act1_sceneNone_speech25 | Cobbler   A | Act 1 Scene 1 ---
+trade, sir, that I hope I may use with a safe conscience, which is indeed, sir, a mender of bad soles. 15
+
+--- act1_sceneNone_speech26 | Flavius | Act 1 Scene 1 ---
+What trade, thou knave? Thou naughty knave, what trade?
+
+--- act1_scene1_speech27 | Cobbler   N | Act 1 Scene 1 ---
+ay, I beseech you, sir, be not out with me. Yet if you be out, sir, I can mend you.
+
+--- act1_scene1_speech28 | Marullus | Act 1 Scene 1 ---
+What mean’st thou by that? Mend me, thou saucy fellow?
+
+--- act1_scene1_speech29 | Cobbler   W | Act 1 Scene 1 ---
+hy, sir, cobble you.
+
+--- act1_scene1_speech30 | Flavius   T | Act 1 Scene 1 ---
+hou art a cobbler, art thou?
+
+--- act1_scene1_speech31 | Cobbler   T | Act 1 Scene 1 ---
+ruly, sir, all that I live by is with the awl. I meddle with no tradesman’s matters nor women’s matters, but withal I am indeed, sir, a surgeon to old shoes: when they are in great danger, neat’s leather have gone upon my handiwork.
+
+--- act1_scene1_speech32 | Flavius | Act 1 Scene 1 ---
+But wherefore art not in thy shop today? Why dost thou lead these men about the streets?
+
+--- act1_scene1_speech33 | Cobbler   T | Act 1 Scene 1 ---
+ruly, sir, to wear out their shoes, to get myself into more work. But indeed, sir, we make holiday to see Caesar and to rejoice in his triumph. 35
+
+--- act1_scene1_speech34_sen1 | Marullus | Act 1 Scene 1 ---
+Wherefore rejoice?
+
+--- act1_scene1_speech34_sen2 | Marullus | Act 1 Scene 1 ---
+What conquest brings he home?
+
+--- act1_scene1_speech34_sen3 | Marullus | Act 1 Scene 1 ---
+What tributaries follow him to Rome To grace in captive bonds his chariot wheels?
+
+--- act1_scene1_speech34_sen4 | Marullus | Act 1 Scene 1 ---
+You blocks, you stones, you worse than senseless things!
+
+--- act1_scene1_speech34_sen5 | Marullus | Act 1 Scene 1 ---
+Knew you not Pompey?
+
+--- act1_scene1_speech34_sen6 | Marullus | Act 1 Scene 1 ---
+Many a time and oft Have you climbed up to walls and battlements, To towers and windows, yea, to chimney tops, Your infants in your arms, and there have sat The livelong day, with patient expectation, To see great Pompey pass the streets of Rome.
+
+--- act1_scene1_speech34_sen7 | Marullus | Act 1 Scene 1 ---
+And when you saw his chariot but appear, Have you not made an universal shout, That Tiber trembled underneath her banks 50
+
+--- act1_scene1_speech35 | STAGE | Act 1 Scene 1 ---
+To hear the replication of your sounds Made in her concave shores? And do you now put on your best attire? And do you now cull out a holiday? And do you now strew flowers in his way That comes in triumph over Pompey’s blood? Be gone! Run to your houses, fall upon your knees, Pray to the gods to intermit the plague That needs must light on this ingratitude. 60
+
+--- act1_scene1_speech36 | Flavius | Act 1 Scene 1 ---
+Go, go, good countrymen, and for this fault Assemble all the poor men of your sort, Draw them to Tiber banks, and weep your tears Into the channel, till the lowest stream Do kiss the most exalted shores of all. All the Commoners exit. See whe’er their basest mettle be not moved. They vanish tongue-tied in their guiltiness. Go you down that way towards the Capitol. This way will I. Disrobe the images If you do find them decked with ceremonies. 70
+
+--- act1_scene1_speech37 | Marullus   M | Act 1 Scene 1 ---
+ay we do so? You know it is the feast of Lupercal.
+
+--- act1_scene1_speech38 | Flavius | Act 1 Scene 1 ---
+It is no matter. Let no images Be hung with Caesar’s trophies. I’ll about And drive away the vulgar from the streets; So do you too, where you perceive them thick. These growing feathers plucked from Caesar’s wing Will make him fly an ordinary pitch, Who else would soar above the view of men And keep us all in servile fearfulness. They exit in different directions.
+
+--- act1_scene2_speech39 | STAGE | Act 1 Scene 2 ---
+Enter Caesar, Antony for the course, Calphurnia, Portia, Decius, Cicero, Brutus, Cassius, Casca, a Soothsayer; after them Marullus and Flavius and Commoners. Calphurnia.
+

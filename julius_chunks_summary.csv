@@ -1,0 +1,905 @@
+chunk_id,act,scene,speaker,words,start_page,end_page
+actNone_sceneNone_speech1,1,1,STAGE,184,6,6
+actNone_sceneNone_speech2,1,1,STAGE,4,7,7
+actNone_sceneNone_speech3,1,1,Calphurnia,6,7,7
+actNone_sceneNone_speech4,1,1,Portia,3,7,7
+actNone_sceneNone_speech5,1,1,Lucius,3,7,7
+actNone_sceneNone_speech6,1,1,Cinna,4,7,7
+actNone_sceneNone_speech7,1,1,Decius Brutus,5,7,7
+actNone_sceneNone_speech10,1,1,Mark Antony,7,7,7
+actNone_sceneNone_speech11,1,1,Octavius,6,7,7
+actNone_sceneNone_speech12,1,1,Claudius,5,7,7
+actNone_sceneNone_speech13,1,1,Young Cato,7,7,7
+actNone_sceneNone_speech16,1,1,STAGE,8,8,8
+actNone_sceneNone_speech18,1,1,Pindarus,31,8,8
+act1_sceneNone_speech19,1,1,STAGE,15,9,9
+act1_sceneNone_speech20,1,1,Flavius,37,9,9
+act1_sceneNone_speech21,1,1,Carpenter   W,4,9,9
+act1_sceneNone_speech22,1,1,Marullus,22,9,9
+act1_sceneNone_speech23,1,1,Cobbler   T,17,9,9
+act1_sceneNone_speech24,1,1,Marullus,8,9,9
+act1_sceneNone_speech25,1,1,Cobbler   A,22,9,9
+act1_sceneNone_speech26,1,1,Flavius,9,9,9
+act1_scene1_speech27,1,1,Cobbler   N,20,10,10
+act1_scene1_speech28,1,1,Marullus,10,10,10
+act1_scene1_speech29,1,1,Cobbler   W,4,10,10
+act1_scene1_speech30,1,1,Flavius   T,6,10,10
+act1_scene1_speech31,1,1,Cobbler   T,44,10,10
+act1_scene1_speech32,1,1,Flavius,17,10,10
+act1_scene1_speech33,1,1,Cobbler   T,29,10,10
+act1_scene1_speech34_sen1,1,1,Marullus,2,10,10
+act1_scene1_speech34_sen2,1,1,Marullus,5,10,10
+act1_scene1_speech34_sen3,1,1,Marullus,14,10,10
+act1_scene1_speech34_sen4,1,1,Marullus,9,10,10
+act1_scene1_speech34_sen5,1,1,Marullus,4,10,10
+act1_scene1_speech34_sen6,1,1,Marullus,45,10,10
+act1_scene1_speech34_sen7,1,1,Marullus,22,10,10
+act1_scene1_speech35,1,1,STAGE,71,11,11
+act1_scene1_speech36,1,1,Flavius,82,11,11
+act1_scene1_speech37,1,1,Marullus   M,12,11,11
+act1_scene1_speech38,1,1,Flavius,66,11,11
+act1_scene2_speech39,1,2,STAGE,23,12,12
+act1_scene2_speech41,1,2,Casca     P,5,12,12
+act1_scene2_speech43,1,2,Calphurnia   H,3,12,12
+act1_scene2_speech44,1,2,Caesar,12,12,12
+act1_scene2_speech45,1,2,Antony   C,3,12,12
+act1_scene2_speech46,1,2,Caesar,25,12,12
+act1_scene2_speech47,1,2,Antony     I,10,12,12
+act1_scene2_speech48,1,2,Caesar,10,12,12
+act1_scene2_speech51,1,2,Casca,8,12,12
+act1_scene2_speech52,1,2,Caesar,19,12,12
+act1_scene2_speech53,1,2,Soothsayer,5,12,12
+act1_scene2_speech54,1,2,Caesar     W,4,12,12
+act1_scene2_speech55,1,2,Caesar,9,13,13
+act1_scene2_speech56,1,2,Cassius,12,13,13
+act1_scene2_speech57,1,2,Caesar,9,13,13
+act1_scene2_speech58,1,2,Soothsayer   B,5,13,13
+act1_scene2_speech59,1,2,Caesar,16,13,13
+act1_scene2_speech60,1,2,Cassius,12,13,13
+act1_scene2_speech62,1,2,Cassius   I,3,13,13
+act1_scene2_speech63,1,2,Brutus,16,13,13
+act1_scene2_speech64,1,2,Cassius,33,13,13
+act1_scene2_speech65,1,2,Brutus     C,53,13,13
+act1_scene2_speech66,1,2,STAGE,22,14,14
+act1_scene2_speech67,1,2,Cassius,32,14,14
+act1_scene2_speech68,1,2,Brutus,15,14,14
+act1_scene2_speech69,1,2,Cassius,61,14,14
+act1_scene2_speech70,1,2,Brutus,23,14,14
+act1_scene2_speech71,1,2,Cassius,85,14,14
+act1_scene2_speech72,1,2,STAGE,17,15,15
+act1_scene2_speech73,1,2,Brutus,14,15,15
+act1_scene2_speech75,1,2,Brutus,62,15,15
+act1_scene2_speech76_sen1,1,2,Cassius,9,15,15
+act1_scene2_speech76_sen2,1,2,Cassius,8,15,15
+act1_scene2_speech76_sen3,1,2,Cassius,18,15,15
+act1_scene2_speech76_sen4,1,2,Cassius,18,15,15
+act1_scene2_speech76_sen5,1,2,Cassius,54,15,15
+act1_scene2_speech76_sen6,1,2,Cassius,8,15,15
+act1_scene2_speech77,1,2,STAGE,179,16,16
+act1_scene2_speech78,1,2,Brutus   A,12,16,16
+act1_scene2_speech79,1,2,Cassius,53,16,16
+act1_scene2_speech80,1,2,STAGE,169,17,17
+act1_scene2_speech81,1,2,Brutus,68,17,17
+act1_scene2_speech82,1,2,STAGE,13,18,18
+act1_scene2_speech83,1,2,Cassius   I,21,18,18
+act1_scene2_speech84,1,2,Brutus,8,18,18
+act1_scene2_speech85,1,2,Cassius,24,18,18
+act1_scene2_speech86,1,2,Brutus,46,18,18
+act1_scene2_speech87,1,2,Cassius,11,18,18
+act1_scene2_speech90,1,2,Caesar,33,18,18
+act1_scene2_speech91,1,2,Antony,15,18,18
+act1_scene2_speech92,1,2,Caesar,17,18,18
+act1_scene2_speech93,1,2,STAGE,121,19,19
+act1_scene2_speech94,1,2,Casca   Y,11,19,19
+act1_scene2_speech95,1,2,Brutus,13,19,19
+act1_scene2_speech96,1,2,Casca   W,8,19,19
+act1_scene2_speech97,1,2,Casca   W,28,19,19
+act1_scene2_speech98,1,2,Brutus   W,6,19,19
+act1_scene2_speech99,1,2,Casca   W,5,19,19
+act1_scene2_speech100,1,2,Cassius,9,19,19
+act1_scene2_speech101,1,2,Casca   W,4,19,19
+act1_scene2_speech102,1,2,Brutus   W,6,19,19
+act1_scene2_speech104,1,2,Cassius   W,7,20,20
+act1_scene2_speech106,1,2,Brutus,8,20,20
+act1_scene2_speech107_sen1,1,2,Casca   I,11,20,20
+act1_scene2_speech107_sen2,1,2,Casca   I,9,20,20
+act1_scene2_speech107_sen3,1,2,Casca   I,42,20,20
+act1_scene2_speech107_sen4,1,2,Casca   I,27,20,20
+act1_scene2_speech107_sen5,1,2,Casca   I,8,20,20
+act1_scene2_speech107_sen6,1,2,Casca   I,54,20,20
+act1_scene2_speech107_sen7,1,2,Casca   I,9,20,20
+act1_scene2_speech108,1,2,Cassius,9,20,20
+act1_scene2_speech110,1,2,Brutus,9,20,20
+act1_scene2_speech111,1,2,Cassius,17,20,20
+act1_scene2_speech112,1,2,Casca   I,47,20,20
+act1_scene2_speech113,1,2,Brutus,8,21,21
+act1_scene2_speech114_sen1,1,2,Casca   M,30,21,21
+act1_scene2_speech114_sen2,1,2,Casca   M,29,21,21
+act1_scene2_speech114_sen3,1,2,Casca   M,4,21,21
+act1_scene2_speech114_sen4,1,2,Casca   M,26,21,21
+act1_scene2_speech114_sen5,1,2,Casca   M,18,21,21
+act1_scene2_speech114_sen6,1,2,Casca   M,21,21,21
+act1_scene2_speech115,1,2,Brutus,8,21,21
+act1_scene2_speech117,1,2,Cassius   D,4,21,21
+act1_scene2_speech120,1,2,Casca   N,70,21,21
+act1_scene2_speech121,1,2,Cassius   W,8,21,21
+act1_scene2_speech123,1,2,Cassius   W,6,21,21
+act1_scene2_speech125,1,2,Cassius   G,6,21,21
+act1_scene2_speech127,1,2,Brutus,18,22,22
+act1_scene2_speech128,1,2,Cassius,39,22,22
+act1_scene2_speech129,1,2,Brutus,29,22,22
+act1_scene2_speech130_sen1,1,2,Cassius,2,22,22
+act1_scene2_speech130_sen2,1,2,Cassius,5,22,22
+act1_scene2_speech130_sen3,1,2,Cassius,14,22,22
+act1_scene2_speech130_sen4,1,2,Cassius,20,22,22
+act1_scene2_speech130_sen5,1,2,Cassius,9,22,22
+act1_scene2_speech130_sen6,1,2,Cassius,14,22,22
+act1_scene2_speech130_sen7,1,2,Cassius,57,22,22
+act1_scene2_speech130_sen8,1,2,Cassius,2,22,22
+act1_scene3_speech131,1,3,STAGE,7,23,23
+act1_scene3_speech132,1,3,Cicero,16,23,23
+act1_scene3_speech133,1,3,Casca,78,23,23
+act1_scene3_speech134,1,3,Cicero,6,23,23
+act1_scene3_speech135_sen1,1,3,Casca,24,23,23
+act1_scene3_speech135_sen2,1,3,Casca,27,23,23
+act1_scene3_speech135_sen3,1,3,Casca,29,23,23
+act1_scene3_speech135_sen4,1,3,Casca,17,23,23
+act1_scene3_speech135_sen5,1,3,Casca,11,23,23
+act1_scene3_speech136,1,3,STAGE,21,24,24
+act1_scene3_speech137,1,3,Cicero,28,24,24
+act1_scene3_speech138,1,3,Casca,16,24,24
+act1_scene3_speech139,1,3,Cicero,13,24,24
+act1_scene3_speech140,1,3,Casca     F,9,24,24
+act1_scene3_speech143,1,3,Cassius     C,4,24,24
+act1_scene3_speech144,1,3,Casca,10,24,24
+act1_scene3_speech145,1,3,Casca,7,24,24
+act1_scene3_speech146,1,3,Cassius,66,24,24
+act1_scene3_speech147,1,3,Casca,33,25,25
+act1_scene3_speech148_sen1,1,3,Cassius,23,25,25
+act1_scene3_speech148_sen2,1,3,Cassius,22,25,25
+act1_scene3_speech148_sen3,1,3,Cassius,71,25,25
+act1_scene3_speech148_sen4,1,3,Cassius,41,25,25
+act1_scene3_speech149,1,3,Casca,9,25,25
+act1_scene3_speech150,1,3,Cassius,41,25,25
+act1_scene3_speech151,1,3,Casca,30,26,26
+act1_scene3_speech152,1,3,Cassius,77,26,26
+act1_scene3_speech154_sen1,1,3,Cassius,8,26,26
+act1_scene3_speech154_sen2,1,3,Cassius,27,26,26
+act1_scene3_speech154_sen3,1,3,Cassius,14,26,26
+act1_scene3_speech154_sen4,1,3,Cassius,24,26,26
+act1_scene3_speech154_sen5,1,3,Cassius,8,26,26
+act1_scene3_speech154_sen6,1,3,Cassius,16,26,26
+act1_scene3_speech154_sen7,1,3,Cassius,10,26,26
+act1_scene3_speech155,1,3,Casca,42,27,27
+act1_scene3_speech156,1,3,Cassius     T,78,27,27
+act1_scene3_speech157,1,3,Casca,9,27,27
+act1_scene3_speech158,1,3,Cassius,17,27,27
+act1_scene3_speech159,1,3,Cinna,8,27,27
+act1_scene3_speech160,1,3,Cassius,15,27,27
+act1_scene3_speech161,1,3,Cinna,10,27,27
+act1_scene3_speech163,1,3,Cinna,16,27,27
+act1_scene3_speech164,1,3,Cassius,61,28,28
+act1_scene3_speech165,1,3,Cinna,26,28,28
+act1_scene3_speech166,1,3,Cassius,40,28,28
+act1_scene3_speech167,1,3,Casca,21,28,28
+act1_scene3_speech168,1,3,Cassius,37,28,28
+act2_sceneNone_speech169,2,3,STAGE,5,29,29
+act2_sceneNone_speech170,2,3,Brutus   W,21,29,29
+act2_sceneNone_speech171,2,3,Lucius   C,4,29,29
+act2_sceneNone_speech172,2,3,Brutus,17,29,29
+act2_sceneNone_speech173,2,3,Lucius   I,5,29,29
+act2_sceneNone_speech174,2,3,Brutus,72,29,29
+act2_scene1_speech175,2,1,STAGE,119,30,30
+act2_scene1_speech176,2,1,Lucius,38,30,30
+act2_scene1_speech177,2,1,Brutus,17,30,30
+act2_scene1_speech178,2,1,Lucius   I,3,30,30
+act2_scene1_speech179,2,1,Brutus,8,30,30
+act2_scene1_speech180,2,1,Lucius   I,5,30,30
+act2_scene1_speech181,2,1,Brutus,21,30,30
+act2_scene1_speech182,2,1,STAGE,97,31,31
+act2_scene1_speech183,2,1,Lucius   S,8,31,31
+act2_scene1_speech184,2,1,Brutus,69,31,31
+act2_scene1_speech185,2,1,Lucius,14,31,31
+act2_scene1_speech187,2,1,Lucius,7,32,32
+act2_scene1_speech189,2,1,Lucius,30,32,32
+act2_scene1_speech190,2,1,Brutus     L,80,32,32
+act2_scene1_speech191,2,1,Cassius,8,32,32
+act2_scene1_speech192,2,1,Brutus,9,32,32
+act2_scene1_speech193,2,1,Cassius,34,32,32
+act2_scene1_speech195,2,1,Cassius,3,33,33
+act2_scene1_speech197,2,1,Cassius,8,33,33
+act2_scene1_speech198,2,1,Brutus   T,15,33,33
+act2_scene1_speech199,2,1,Cassius   S,9,33,33
+act2_scene1_speech200,2,1,Decius,10,33,33
+act2_scene1_speech202,2,1,Cinna,8,33,33
+act2_scene1_speech203,2,1,Casca,57,33,33
+act2_scene1_speech204,2,1,Brutus,14,33,33
+act2_scene1_speech205,2,1,Cassius,6,33,33
+act2_scene1_speech206,2,1,Brutus,40,33,33
+act2_scene1_speech207,2,1,STAGE,169,34,34
+act2_scene1_speech208,2,1,Cassius,8,34,34
+act2_scene1_speech209,2,1,Casca,6,34,34
+act2_scene1_speech211,2,1,Metellus,38,34,34
+act2_scene1_speech212,2,1,Brutus,10,35,35
+act2_scene1_speech213,2,1,Cassius   T,5,35,35
+act2_scene1_speech214,2,1,Casca   I,5,35,35
+act2_scene1_speech215,2,1,Decius,9,35,35
+act2_scene1_speech216,2,1,Cassius,47,35,35
+act2_scene1_speech217_sen1,2,1,Brutus,33,35,35
+act2_scene1_speech217_sen2,2,1,Brutus,7,35,35
+act2_scene1_speech217_sen3,2,1,Brutus,19,35,35
+act2_scene1_speech217_sen4,2,1,Brutus,4,35,35
+act2_scene1_speech217_sen5,2,1,Brutus,7,35,35
+act2_scene1_speech217_sen6,2,1,Brutus,10,35,35
+act2_scene1_speech217_sen7,2,1,Brutus,19,35,35
+act2_scene1_speech217_sen8,2,1,Brutus,23,35,35
+act2_scene1_speech217_sen9,2,1,Brutus,23,35,35
+act2_scene1_speech218,2,1,STAGE,22,36,36
+act2_scene1_speech219,2,1,Cassius     Y,13,36,36
+act2_scene1_speech220,2,1,Brutus,43,36,36
+act2_scene1_speech221,2,1,Trebonius,21,36,36
+act2_scene1_speech222,2,1,Brutus,4,36,36
+act2_scene1_speech223,2,1,Cassius     T,5,36,36
+act2_scene1_speech224,2,1,Trebonius,4,36,36
+act2_scene1_speech225,2,1,Cassius     B,59,36,36
+act2_scene1_speech226,2,1,Decius,29,36,36
+act2_scene1_speech227,2,1,STAGE,36,37,37
+act2_scene1_speech228,2,1,Cassius,11,37,37
+act2_scene1_speech229,2,1,Brutus,9,37,37
+act2_scene1_speech230,2,1,Cinna,8,37,37
+act2_scene1_speech231,2,1,Metellus,14,37,37
+act2_scene1_speech232,2,1,Brutus,25,37,37
+act2_scene1_speech233,2,1,Cassius,25,37,37
+act2_scene1_speech234,2,1,Brutus,61,37,37
+act2_scene1_speech235,2,1,STAGE,16,38,38
+act2_scene1_speech236,2,1,Portia     B,3,38,38
+act2_scene1_speech237,2,1,Brutus,25,38,38
+act2_scene1_speech238_sen1,2,1,Portia,4,38,38
+act2_scene1_speech238_sen2,2,1,Portia,7,38,38
+act2_scene1_speech238_sen3,2,1,Portia,33,38,38
+act2_scene1_speech238_sen4,2,1,Portia,7,38,38
+act2_scene1_speech238_sen5,2,1,Portia,22,38,38
+act2_scene1_speech238_sen6,2,1,Portia,31,38,38
+act2_scene1_speech238_sen7,2,1,Portia,35,38,38
+act2_scene1_speech239,2,1,Portia,18,38,38
+act2_scene1_speech240,2,1,Brutus,10,39,39
+act2_scene1_speech241_sen1,2,1,Portia,3,39,39
+act2_scene1_speech241_sen2,2,1,Portia,16,39,39
+act2_scene1_speech241_sen3,2,1,Portia,33,39,39
+act2_scene1_speech241_sen4,2,1,Portia,76,39,39
+act2_scene1_speech242,2,1,Brutus     K,8,39,39
+act2_scene1_speech243,2,1,Portia,69,39,39
+act2_scene1_speech244,2,1,Brutus,21,40,40
+act2_scene1_speech245,2,1,Portia,55,40,40
+act2_scene1_speech246,2,1,Brutus     O,61,40,40
+act2_scene1_speech247,2,1,Lucius,11,40,40
+act2_scene1_speech248,2,1,Brutus,14,40,40
+act2_scene1_speech249,2,1,Ligarius,7,40,40
+act2_scene1_speech250,2,1,Brutus,9,41,41
+act2_scene1_speech251,2,1,Ligarius,7,41,41
+act2_scene1_speech252,2,1,Brutus,18,41,41
+act2_scene1_speech253,2,1,Ligarius,52,41,41
+act2_scene1_speech254,2,1,Ligarius,11,41,41
+act2_scene1_speech255,2,1,Brutus,15,41,41
+act2_scene1_speech256,2,1,Ligarius     S,27,41,41
+act2_scene1_speech257,2,1,Brutus     F,5,41,41
+act2_scene2_speech258,2,2,STAGE,9,42,42
+act2_scene2_speech259,2,2,Caesar,26,42,42
+act2_scene2_speech261,2,2,Caesar,14,42,42
+act2_scene2_speech262,2,2,Servant   I,7,42,42
+act2_scene2_speech263,2,2,Calphurnia,18,42,42
+act2_scene2_speech264,2,2,Caesar,25,42,42
+act2_scene2_speech265,2,2,Calphurnia,79,42,42
+act2_scene2_speech266,2,2,STAGE,14,43,43
+act2_scene2_speech267,2,2,Caesar     W,30,43,43
+act2_scene2_speech268,2,2,Calphurnia,17,43,43
+act2_scene2_speech269,2,2,Caesar,54,43,43
+act2_scene2_speech270,2,2,Servant,25,43,43
+act2_scene2_speech271,2,2,Caesar,60,43,43
+act2_scene2_speech272,2,2,Calphurnia     A,9,43,43
+act2_scene2_speech273,2,2,STAGE,46,44,44
+act2_scene2_speech274,2,2,Caesar,31,44,44
+act2_scene2_speech275,2,2,Decius,7,44,44
+act2_scene2_speech276,2,2,Caesar,33,44,44
+act2_scene2_speech277,2,2,Calphurnia,4,44,44
+act2_scene2_speech278,2,2,Caesar     S,30,44,44
+act2_scene2_speech279,2,2,Decius,19,44,44
+act2_scene2_speech280,2,2,Caesar,40,44,44
+act2_scene2_speech281,2,2,STAGE,57,45,45
+act2_scene2_speech282,2,2,Decius,56,45,45
+act2_scene2_speech283,2,2,Caesar,8,45,45
+act2_scene2_speech284,2,2,Decius,94,45,45
+act2_scene2_speech285,2,2,Caesar,16,45,45
+act2_scene2_speech286,2,2,STAGE,18,46,46
+act2_scene2_speech287,2,2,Publius,3,46,46
+act2_scene2_speech288,2,2,Caesar     W,35,46,46
+act2_scene2_speech289,2,2,Brutus     C,4,46,46
+act2_scene2_speech290,2,2,Caesar,13,46,46
+act2_scene2_speech292,2,2,Caesar,26,46,46
+act2_scene2_speech293,2,2,Trebonius,20,46,46
+act2_scene2_speech294,2,2,Caesar,19,46,46
+act2_scene2_speech295,2,2,Brutus,21,46,46
+act2_scene4_speech296,2,4,STAGE,5,47,47
+act2_scene4_speech297_sen1,2,4,Artemidorus   C,24,47,47
+act2_scene4_speech297_sen2,2,4,Artemidorus   C,5,47,47
+act2_scene4_speech297_sen3,2,4,Artemidorus   C,5,47,47
+act2_scene4_speech297_sen4,2,4,Artemidorus   C,15,47,47
+act2_scene4_speech297_sen5,2,4,Artemidorus   C,8,47,47
+act2_scene4_speech297_sen6,2,4,Artemidorus   C,5,47,47
+act2_scene4_speech297_sen7,2,4,Artemidorus   C,5,47,47
+act2_scene4_speech297_sen8,2,4,Artemidorus   C,20,47,47
+act2_scene4_speech297_sen9,2,4,Artemidorus   C,13,47,47
+act2_scene4_speech297_sen10,2,4,Artemidorus   C,17,47,47
+act2_scene4_speech297_sen11,2,4,Artemidorus   C,2,47,47
+act2_scene4_speech297_sen12,2,4,Artemidorus   C,4,47,47
+act2_scene4_speech298,2,4,Portia,13,47,47
+act2_scene4_speech300,2,4,Portia,27,47,47
+act2_scene4_speech301,2,4,STAGE,13,48,48
+act2_scene4_speech302,2,4,Lucius     M,20,48,48
+act2_scene4_speech303,2,4,Portia,33,48,48
+act2_scene4_speech304,2,4,Lucius   I,3,48,48
+act2_scene4_speech305,2,4,Portia   P,11,48,48
+act2_scene4_speech306,2,4,Lucius   S,8,48,48
+act2_scene4_speech307,2,4,Portia,8,48,48
+act2_scene4_speech309,2,4,Portia   W,4,48,48
+act2_scene4_speech310,2,4,Soothsayer   A,5,48,48
+act2_scene4_speech311,2,4,Portia,7,48,48
+act2_scene4_speech312,2,4,Soothsayer,18,48,48
+act2_scene4_speech313,2,4,Portia,9,48,48
+act2_scene4_speech314,2,4,Soothsayer,19,48,48
+act2_scene4_speech315,2,4,Portia,8,48,48
+act2_scene4_speech316,2,4,Soothsayer,52,49,49
+act2_scene4_speech317,2,4,Portia,64,49,49
+act3_sceneNone_speech318,3,4,STAGE,22,50,50
+act3_sceneNone_speech319,3,4,Caesar   T,6,50,50
+act3_sceneNone_speech321,3,4,Artemidorus   H,5,50,50
+act3_sceneNone_speech322,3,4,Decius,15,50,50
+act3_sceneNone_speech323,3,4,Artemidorus,8,50,50
+act3_sceneNone_speech324,3,4,Caesar,8,50,50
+act3_sceneNone_speech325,3,4,Artemidorus,6,50,50
+act3_sceneNone_speech326,3,4,Caesar,6,50,50
+act3_sceneNone_speech327,3,4,Publius     S,3,50,50
+act3_sceneNone_speech328,3,4,Cassius,18,50,50
+act3_scene1_speech329,3,1,Popilius,3,51,51
+act3_scene1_speech330,3,1,Cassius   W,4,51,51
+act3_scene1_speech331,3,1,Popilius   F,6,51,51
+act3_scene1_speech332,3,1,Brutus   W,4,51,51
+act3_scene1_speech333,3,1,Cassius,7,51,51
+act3_scene1_speech334,3,1,Brutus,9,51,51
+act3_scene1_speech335,3,1,Cassius,28,51,51
+act3_scene1_speech336,3,1,Brutus     C,19,51,51
+act3_scene1_speech337,3,1,Cassius,20,51,51
+act3_scene1_speech338,3,1,Decius,14,51,51
+act3_scene1_speech339,3,1,Brutus,8,51,51
+act3_scene1_speech340,3,1,Cinna,9,51,51
+act3_scene1_speech341,3,1,Caesar,16,51,51
+act3_scene1_speech342,3,1,Metellus,19,51,51
+act3_scene1_speech343,3,1,Caesar     I,89,52,52
+act3_scene1_speech344,3,1,Metellus,24,52,52
+act3_scene1_speech345,3,1,Brutus,14,52,52
+act3_scene1_speech346,3,1,Caesar,3,52,52
+act3_scene1_speech347,3,1,Cassius,21,52,52
+act3_scene1_speech348,3,1,Caesar,39,52,52
+act3_scene1_speech349,3,1,STAGE,86,53,53
+act3_scene1_speech351,3,1,Caesar     H,6,53,53
+act3_scene1_speech352,3,1,Decius,4,53,53
+act3_scene1_speech353,3,1,Caesar     D,5,53,53
+act3_scene1_speech354,3,1,Casca   S,14,53,53
+act3_scene1_speech356,3,1,Cinna,13,53,53
+act3_scene1_speech357,3,1,Cassius,12,53,53
+act3_scene1_speech358,3,1,Brutus,14,53,53
+act3_scene1_speech359,3,1,Casca,5,53,53
+act3_scene1_speech360,3,1,Decius     A,5,53,53
+act3_scene1_speech362,3,1,Cinna,7,53,53
+act3_scene1_speech363,3,1,Metellus,10,54,54
+act3_scene1_speech364,3,1,Brutus,24,54,54
+act3_scene1_speech365,3,1,Cassius,17,54,54
+act3_scene1_speech366,3,1,Brutus,20,54,54
+act3_scene1_speech367,3,1,Cassius   W,4,54,54
+act3_scene1_speech368,3,1,Trebonius   F,18,54,54
+act3_scene1_speech369,3,1,Brutus     F,24,54,54
+act3_scene1_speech370,3,1,Casca,17,54,54
+act3_scene1_speech371,3,1,Brutus,64,54,54
+act3_scene1_speech372,3,1,Cassius,32,55,55
+act3_scene1_speech373,3,1,Brutus,20,55,55
+act3_scene1_speech375,3,1,Decius,4,55,55
+act3_scene1_speech377,3,1,Brutus,8,55,55
+act3_scene1_speech378_sen1,3,1,Servant,10,55,55
+act3_scene1_speech378_sen2,3,1,Servant,30,55,55
+act3_scene1_speech378_sen3,3,1,Servant,17,55,55
+act3_scene1_speech378_sen4,3,1,Servant,45,55,55
+act3_scene1_speech379,3,1,STAGE,16,56,56
+act3_scene1_speech380,3,1,Brutus,27,56,56
+act3_scene1_speech381,3,1,Servant     I,6,56,56
+act3_scene1_speech382,3,1,Cassius,15,56,56
+act3_scene1_speech383,3,1,Brutus,6,56,56
+act3_scene1_speech384,3,1,Antony,86,56,56
+act3_scene1_speech385,3,1,STAGE,17,57,57
+act3_scene1_speech386_sen1,3,1,Brutus,35,57,57
+act3_scene1_speech386_sen2,3,1,Brutus,30,57,57
+act3_scene1_speech386_sen3,3,1,Brutus,12,57,57
+act3_scene1_speech386_sen4,3,1,Brutus,24,57,57
+act3_scene1_speech387,3,1,Cassius,15,57,57
+act3_scene1_speech388,3,1,Brutus,34,57,57
+act3_scene1_speech389,3,1,Antony     I,74,57,57
+act3_scene1_speech390,3,1,STAGE,137,58,58
+act3_scene1_speech392,3,1,Antony     P,19,58,58
+act3_scene1_speech393,3,1,Cassius,27,58,58
+act3_scene1_speech394,3,1,Antony,42,58,58
+act3_scene1_speech395,3,1,Brutus,7,58,58
+act3_scene1_speech396,3,1,STAGE,20,59,59
+act3_scene1_speech397,3,1,Antony     T,32,59,59
+act3_scene1_speech398,3,1,Brutus,4,59,59
+act3_scene1_speech399,3,1,Cassius     B,38,59,59
+act3_scene1_speech400,3,1,Brutus,51,59,59
+act3_scene1_speech401,3,1,Cassius,4,59,59
+act3_scene1_speech402,3,1,Brutus,62,59,59
+act3_scene1_speech404,3,1,Brutus,11,60,60
+act3_scene1_speech405_sen1,3,1,Antony,9,60,60
+act3_scene1_speech405_sen2,3,1,Antony,16,60,60
+act3_scene1_speech405_sen3,3,1,Antony,9,60,60
+act3_scene1_speech405_sen4,3,1,Antony,122,60,60
+act3_scene1_speech405_sen5,3,1,Antony,3,60,60
+act3_scene1_speech405_sen6,3,1,Antony,7,60,60
+act3_scene1_speech406,3,1,Servant   I,3,60,60
+act3_scene1_speech407,3,1,Antony,9,60,60
+act3_scene1_speech408,3,1,Servant,9,60,60
+act3_scene2_speech409,3,2,STAGE,10,61,61
+act3_scene2_speech410,3,2,Antony,32,61,61
+act3_scene2_speech411,3,2,Servant,8,61,61
+act3_scene2_speech412,3,2,Antony,95,61,61
+act3_scene2_speech413,3,2,Plebeians,8,61,61
+act3_scene2_speech414,3,2,Brutus,37,61,61
+act3_scene2_speech415,3,2,STAGE,9,62,62
+act3_scene2_speech416,3,2,First Plebeian     I,4,62,62
+act3_scene2_speech417,3,2,Second Plebeian,18,62,62
+act3_scene2_speech418,3,2,Third Plebeian,6,62,62
+act3_scene2_speech420,3,2,Plebeians   N,3,62,62
+act3_scene2_speech421,3,2,Brutus   T,9,62,62
+act3_scene2_speech422,3,2,STAGE,110,63,63
+act3_scene2_speech423,3,2,Plebeians   L,5,63,63
+act3_scene2_speech424,3,2,First Plebeian,8,63,63
+act3_scene2_speech425,3,2,Second Plebeian,7,63,63
+act3_scene2_speech426,3,2,Third Plebeian,4,63,63
+act3_scene2_speech427,3,2,Fourth Plebeian     C,9,63,63
+act3_scene2_speech428,3,2,First Plebeian,12,63,63
+act3_scene2_speech430,3,2,Second Plebeian     P,4,63,63
+act3_scene2_speech431,3,2,First Plebeian   P,3,63,63
+act3_scene2_speech432,3,2,Brutus,38,63,63
+act3_scene2_speech433,3,2,STAGE,11,64,64
+act3_scene2_speech434,3,2,First Plebeian,8,64,64
+act3_scene2_speech435,3,2,Third Plebeian,8,64,64
+act3_scene2_speech436,3,2,Plebeians,7,64,64
+act3_scene2_speech437,3,2,Antony,13,64,64
+act3_scene2_speech438,3,2,Fourth Plebeian   W,6,64,64
+act3_scene2_speech440,3,2,Fourth Plebeian,10,64,64
+act3_scene2_speech441,3,2,First Plebeian,5,64,64
+act3_scene2_speech442,3,2,Third Plebeian     N,12,64,64
+act3_scene2_speech443,3,2,Second Plebeian,8,64,64
+act3_scene2_speech444,3,2,Antony,4,64,64
+act3_scene2_speech445,3,2,Plebeians     P,6,64,64
+act3_scene2_speech446,3,2,Antony,67,64,64
+act3_scene2_speech447,3,2,STAGE,170,65,65
+act3_scene2_speech448,3,2,First Plebeian,8,65,65
+act3_scene2_speech449,3,2,Second Plebeian,13,65,65
+act3_scene2_speech450,3,2,Third Plebeian     H,3,65,65
+act3_scene2_speech451,3,2,Fourth Plebeian,18,65,65
+act3_scene2_speech452,3,2,First Plebeian,10,66,66
+act3_scene2_speech453,3,2,Second Plebeian,10,66,66
+act3_scene2_speech454,3,2,Third Plebeian,9,66,66
+act3_scene2_speech455,3,2,Fourth Plebeian,8,66,66
+act3_scene2_speech456_sen1,3,2,Antony,12,66,66
+act3_scene2_speech456_sen2,3,2,Antony,12,66,66
+act3_scene2_speech456_sen3,3,2,Antony,15,66,66
+act3_scene2_speech456_sen4,3,2,Antony,16,66,66
+act3_scene2_speech456_sen5,3,2,Antony,9,66,66
+act3_scene2_speech456_sen6,3,2,Antony,57,66,66
+act3_scene2_speech457,3,2,Fourth Plebeian,9,66,66
+act3_scene2_speech458,3,2,Plebeians,9,66,66
+act3_scene2_speech459,3,2,Antony,9,66,66
+act3_scene2_speech460,3,2,STAGE,57,67,67
+act3_scene2_speech461,3,2,Fourth Plebeian,7,67,67
+act3_scene2_speech462,3,2,Plebeians,9,67,67
+act3_scene2_speech463,3,2,Antony,17,67,67
+act3_scene2_speech464,3,2,Fourth Plebeian   T,6,67,67
+act3_scene2_speech465,3,2,Plebeians   T,4,67,67
+act3_scene2_speech466,3,2,Second Plebeian   T,9,67,67
+act3_scene2_speech467,3,2,Antony,40,67,67
+act3_scene2_speech470,3,2,Third Plebeian   Y,6,67,67
+act3_scene2_speech471,3,2,Fourth Plebeian   A,3,67,67
+act3_scene2_speech472,3,2,First Plebeian,8,67,67
+act3_scene2_speech473,3,2,Second Plebeian,6,67,67
+act3_scene2_speech474,3,2,Antony,9,67,67
+act3_scene2_speech475,3,2,Plebeians   S,6,68,68
+act3_scene2_speech476_sen1,3,2,Antony,9,68,68
+act3_scene2_speech476_sen2,3,2,Antony,6,68,68
+act3_scene2_speech476_sen3,3,2,Antony,24,68,68
+act3_scene2_speech476_sen4,3,2,Antony,8,68,68
+act3_scene2_speech476_sen5,3,2,Antony,8,68,68
+act3_scene2_speech476_sen6,3,2,Antony,45,68,68
+act3_scene2_speech476_sen7,3,2,Antony,9,68,68
+act3_scene2_speech476_sen8,3,2,Antony,8,68,68
+act3_scene2_speech476_sen9,3,2,Antony,17,68,68
+act3_scene2_speech476_sen10,3,2,Antony,29,68,68
+act3_scene2_speech476_sen11,3,2,Antony,16,68,68
+act3_scene2_speech476_sen12,3,2,Antony,4,68,68
+act3_scene2_speech476_sen13,3,2,Antony,4,68,68
+act3_scene2_speech476_sen14,3,2,Antony,13,68,68
+act3_scene2_speech476_sen15,3,2,Antony,7,68,68
+act3_scene2_speech476_sen16,3,2,Antony,9,68,68
+act3_scene2_speech477,3,2,First Plebeian   O,9,68,68
+act3_scene2_speech481,3,2,First Plebeian   O,3,69,69
+act3_scene2_speech483,3,2,Plebeians   R,14,69,69
+act3_scene2_speech485,3,2,First Plebeian   P,6,69,69
+act3_scene2_speech487_sen1,3,2,Antony,17,69,69
+act3_scene2_speech487_sen2,3,2,Antony,8,69,69
+act3_scene2_speech487_sen3,3,2,Antony,14,69,69
+act3_scene2_speech487_sen4,3,2,Antony,13,69,69
+act3_scene2_speech487_sen5,3,2,Antony,29,69,69
+act3_scene2_speech487_sen6,3,2,Antony,21,69,69
+act3_scene2_speech487_sen7,3,2,Antony,5,69,69
+act3_scene2_speech487_sen8,3,2,Antony,15,69,69
+act3_scene2_speech487_sen9,3,2,Antony,36,69,69
+act3_scene2_speech487_sen10,3,2,Antony,2,69,69
+act3_scene2_speech490,3,2,Third Plebeian,6,70,70
+act3_scene2_speech491,3,2,Antony,8,70,70
+act3_scene2_speech492,3,2,Plebeians,7,70,70
+act3_scene2_speech493,3,2,Antony,35,70,70
+act3_scene2_speech494,3,2,Plebeians,10,70,70
+act3_scene2_speech495,3,2,Antony,20,70,70
+act3_scene2_speech496,3,2,Second Plebeian,9,70,70
+act3_scene2_speech498,3,2,Antony   H,4,70,70
+act3_scene2_speech499,3,2,Plebeians   P,3,70,70
+act3_scene2_speech500,3,2,Antony,43,70,70
+act3_scene2_speech501,3,2,First Plebeian,25,70,70
+act3_scene2_speech503,3,2,Third Plebeian   P,3,70,70
+act3_scene3_speech504,3,3,Fourth Plebeian   P,10,71,71
+act3_scene3_speech505,3,3,Antony,19,71,71
+act3_scene3_speech506,3,3,Servant,7,71,71
+act3_scene3_speech507,3,3,Antony   W,3,71,71
+act3_scene3_speech508,3,3,Servant,8,71,71
+act3_scene3_speech509,3,3,Antony,24,71,71
+act3_scene3_speech510,3,3,Servant,10,71,71
+act3_scene3_speech511,3,3,Antony,28,71,71
+act3_scene3_speech512,3,3,Cinna,11,71,71
+act3_scene3_speech513,3,3,First Plebeian   W,5,71,71
+act3_scene3_speech514,3,3,Second Plebeian   W,4,72,72
+act3_scene3_speech515,3,3,Third Plebeian   W,4,72,72
+act3_scene3_speech516,3,3,Fourth Plebeian   A,8,72,72
+act3_scene3_speech517,3,3,Second Plebeian   A,5,72,72
+act3_scene3_speech521,3,3,Cinna   W,38,72,72
+act3_scene3_speech522,3,3,Second Plebeian   T,23,72,72
+act3_scene3_speech523,3,3,Cinna   D,7,72,72
+act3_scene3_speech526,3,3,Second Plebeian   T,5,72,72
+act3_scene3_speech527,3,3,Fourth Plebeian   F,4,72,72
+act3_scene3_speech528,3,3,Cinna   B,6,72,72
+act3_scene3_speech529,3,3,Third Plebeian   Y,4,72,72
+act3_scene3_speech530,3,3,Cinna   T,5,72,72
+act3_scene3_speech531,3,3,First Plebeian   T,7,72,72
+act3_scene3_speech532,3,3,Cinna   I,10,72,72
+act3_scene3_speech533,3,3,Fourth Plebeian   T,12,72,72
+act3_scene3_speech534,3,3,Cinna   I,5,72,72
+act3_scene3_speech536,3,3,Third Plebeian   T,34,72,72
+act4_sceneNone_speech537,4,3,STAGE,5,73,73
+act4_sceneNone_speech538,4,3,Antony,9,73,73
+act4_sceneNone_speech539,4,3,Octavius,8,73,73
+act4_sceneNone_speech540,4,3,Octavius     P,5,73,73
+act4_sceneNone_speech541,4,3,Lepidus,13,73,73
+act4_sceneNone_speech542,4,3,Antony,34,73,73
+act4_sceneNone_speech543,4,3,Lepidus   W,6,73,73
+act4_sceneNone_speech545,4,3,Antony,29,73,73
+act4_scene1_speech547,4,1,Antony,82,74,74
+act4_scene1_speech548,4,1,Octavius     Y,12,74,74
+act4_scene1_speech549_sen1,4,1,Antony,40,74,74
+act4_scene1_speech549_sen2,4,1,Antony,27,74,74
+act4_scene1_speech549_sen3,4,1,Antony,9,74,74
+act4_scene1_speech549_sen4,4,1,Antony,6,74,74
+act4_scene1_speech549_sen5,4,1,Antony,6,74,74
+act4_scene1_speech549_sen6,4,1,Antony,5,74,74
+act4_scene1_speech549_sen7,4,1,Antony,33,74,74
+act4_scene2_speech550,4,2,Octavius,46,75,75
+act4_scene2_speech552,4,2,Lucilius   G,6,75,75
+act4_scene2_speech553,4,2,Brutus,6,75,75
+act4_scene2_speech554,4,2,Lucilius,16,75,75
+act4_scene2_speech555,4,2,Brutus,31,75,75
+act4_scene2_speech556,4,2,Pindarus     I,19,75,75
+act4_scene2_speech557,4,2,Brutus,17,75,75
+act4_scene2_speech558,4,2,Lucilius,26,75,75
+act4_scene2_speech559,4,2,Brutus     T,68,76,76
+act4_scene2_speech560,4,2,Lucilius,25,76,76
+act4_scene2_speech561,4,2,Brutus     H,13,76,76
+act4_scene2_speech563,4,2,Brutus   S,10,76,76
+act4_scene2_speech567,4,2,Cassius,8,76,76
+act4_scene2_speech568,4,2,Brutus,18,76,76
+act4_scene2_speech569,4,2,Cassius,14,76,76
+act4_scene2_speech570,4,2,Brutus     C,28,76,76
+act4_scene3_speech571,4,3,STAGE,22,77,77
+act4_scene3_speech572,4,3,Cassius     P,8,77,77
+act4_scene3_speech573,4,3,Brutus,32,77,77
+act4_scene3_speech574,4,3,Cassius,39,77,77
+act4_scene3_speech575,4,3,Brutus,9,77,77
+act4_scene3_speech576,4,3,Cassius,18,77,77
+act4_scene3_speech577,4,3,Brutus,25,77,77
+act4_scene3_speech578,4,3,Cassius     I,23,77,77
+act4_scene3_speech579,4,3,Brutus,15,77,77
+act4_scene3_speech581,4,3,Brutus,76,78,78
+act4_scene3_speech582,4,3,Cassius     B,23,78,78
+act4_scene3_speech585,4,3,Brutus   I,4,78,78
+act4_scene3_speech586,4,3,Cassius,17,78,78
+act4_scene3_speech587,4,3,Brutus   A,4,78,78
+act4_scene3_speech588,4,3,Cassius,3,78,78
+act4_scene3_speech589,4,3,Brutus     H,24,78,78
+act4_scene3_speech590,4,3,Brutus,26,78,78
+act4_scene3_speech591,4,3,STAGE,38,79,79
+act4_scene3_speech593,4,3,Brutus,25,79,79
+act4_scene3_speech594,4,3,Cassius,13,79,79
+act4_scene3_speech596,4,3,Cassius,11,79,79
+act4_scene3_speech597,4,3,Brutus,11,79,79
+act4_scene3_speech600,4,3,Cassius,5,79,79
+act4_scene3_speech601,4,3,Brutus     F,6,79,79
+act4_scene3_speech602,4,3,Cassius,8,79,79
+act4_scene3_speech603,4,3,Brutus,34,79,79
+act4_scene3_speech604,4,3,STAGE,108,80,80
+act4_scene3_speech605,4,3,Cassius     I,5,80,80
+act4_scene3_speech607,4,3,Cassius,16,80,80
+act4_scene3_speech608,4,3,Cassius,4,80,80
+act4_scene3_speech609,4,3,Brutus     I,6,80,80
+act4_scene3_speech610,4,3,Brutus,5,80,80
+act4_scene3_speech611,4,3,Cassius,27,80,80
+act4_scene3_speech612,4,3,STAGE,88,81,81
+act4_scene3_speech613,4,3,Brutus     S,40,81,81
+act4_scene3_speech614,4,3,Cassius     H,20,81,81
+act4_scene3_speech615,4,3,Brutus,8,81,81
+act4_scene3_speech616,4,3,Cassius,9,81,81
+act4_scene3_speech617,4,3,Brutus,8,81,81
+act4_scene3_speech619,4,3,Brutus     W,4,81,81
+act4_scene3_speech620,4,3,Cassius,21,81,81
+act4_scene3_speech621,4,3,Brutus     Y,30,82,82
+act4_scene3_speech622,4,3,Poet,21,82,82
+act4_scene3_speech623,4,3,Lucilius     Y,6,82,82
+act4_scene3_speech624,4,3,Poet   N,6,82,82
+act4_scene3_speech625,4,3,Cassius   H,5,82,82
+act4_scene3_speech626,4,3,Poet,28,82,82
+act4_scene3_speech627,4,3,Cassius,8,82,82
+act4_scene3_speech628,4,3,Brutus,7,82,82
+act4_scene3_speech629,4,3,Cassius,7,82,82
+act4_scene3_speech630,4,3,Brutus,11,82,82
+act4_scene3_speech631,4,3,Cassius     A,6,82,82
+act4_scene3_speech632,4,3,Brutus,13,82,82
+act4_scene3_speech633,4,3,Cassius,15,82,82
+act4_scene3_speech634,4,3,Brutus   L,7,82,82
+act4_scene3_speech635,4,3,Cassius,14,83,83
+act4_scene3_speech636,4,3,Brutus,8,83,83
+act4_scene3_speech638,4,3,Brutus   S,4,83,83
+act4_scene3_speech639,4,3,Cassius,12,83,83
+act4_scene3_speech640,4,3,Brutus     I,33,83,83
+act4_scene3_speech641,4,3,Cassius   A,6,83,83
+act4_scene3_speech643,4,3,Cassius   O,9,83,83
+act4_scene3_speech644,4,3,Brutus,19,83,83
+act4_scene3_speech645,4,3,Cassius,22,83,83
+act4_scene3_speech646,4,3,Brutus,23,84,84
+act4_scene3_speech647,4,3,Cassius,4,84,84
+act4_scene3_speech649,4,3,Messala,7,84,84
+act4_scene3_speech650,4,3,Brutus   W,3,84,84
+act4_scene3_speech651,4,3,Messala,18,84,84
+act4_scene3_speech652,4,3,Brutus,20,84,84
+act4_scene3_speech653,4,3,Cassius,3,84,84
+act4_scene3_speech654,4,3,Messala     C,18,84,84
+act4_scene3_speech656,4,3,Messala,11,84,84
+act4_scene3_speech658,4,3,Messala     T,4,84,84
+act4_scene3_speech659,4,3,Brutus,10,84,84
+act4_scene3_speech661,4,3,Brutus,10,85,85
+act4_scene3_speech662,4,3,Messala,18,85,85
+act4_scene3_speech663,4,3,Brutus,14,85,85
+act4_scene3_speech664,4,3,Messala,8,85,85
+act4_scene3_speech665,4,3,Cassius,9,85,85
+act4_scene3_speech666,4,3,Brutus,15,85,85
+act4_scene3_speech667,4,3,Cassius   I,7,85,85
+act4_scene3_speech669,4,3,Cassius   T,33,85,85
+act4_scene3_speech670,4,3,Brutus,70,85,85
+act4_scene3_speech671,4,3,Cassius     H,4,85,85
+act4_scene3_speech672,4,3,Brutus,93,86,86
+act4_scene3_speech673,4,3,Cassius     T,14,86,86
+act4_scene3_speech674,4,3,Brutus,28,86,86
+act4_scene3_speech676,4,3,Brutus,20,86,86
+act4_scene3_speech677,4,3,Cassius     O,27,86,86
+act4_scene3_speech678,4,3,Brutus     E,3,87,87
+act4_scene3_speech679,4,3,Cassius   G,4,87,87
+act4_scene3_speech680,4,3,Brutus   G,5,87,87
+act4_scene3_speech681,4,3,Titinius,5,87,87
+act4_scene3_speech682,4,3,Brutus     F,16,87,87
+act4_scene3_speech683,4,3,Lucius,4,87,87
+act4_scene3_speech684,4,3,Brutus     W,21,87,87
+act4_scene3_speech685,4,3,Lucius   V,7,87,87
+act4_scene3_speech686,4,3,Varro   C,4,87,87
+act4_scene3_speech687,4,3,Brutus,16,87,87
+act4_scene3_speech688,4,3,Varro,11,87,87
+act4_scene3_speech689,4,3,Brutus,20,87,87
+act4_scene3_speech690,4,3,Brutus,9,87,87
+act4_scene3_speech691,4,3,STAGE,16,88,88
+act4_scene3_speech692,4,3,Lucius,7,88,88
+act4_scene3_speech695,4,3,Lucius   I,6,88,88
+act4_scene3_speech696_sen1,4,3,Brutus,9,88,88
+act4_scene3_speech696_sen2,4,3,Brutus,4,88,88
+act4_scene3_speech696_sen3,4,3,Brutus,4,88,88
+act4_scene3_speech696_sen4,4,3,Brutus,5,88,88
+act4_scene3_speech696_sen5,4,3,Brutus,18,88,88
+act4_scene3_speech696_sen6,4,3,Brutus,8,88,88
+act4_scene3_speech696_sen7,4,3,Brutus,4,88,88
+act4_scene3_speech696_sen8,4,3,Brutus,16,88,88
+act4_scene3_speech696_sen9,4,3,Brutus,5,88,88
+act4_scene3_speech696_sen10,4,3,Brutus,5,88,88
+act4_scene3_speech696_sen11,4,3,Brutus,5,88,88
+act4_scene3_speech696_sen12,4,3,Brutus,9,88,88
+act4_scene3_speech696_sen13,4,3,Brutus,7,88,88
+act4_scene3_speech696_sen14,4,3,Brutus,19,88,88
+act4_scene3_speech696_sen15,4,3,Brutus,6,88,88
+act4_scene3_speech697,4,3,Ghost,5,89,89
+act4_scene3_speech698,4,3,Brutus     W,3,89,89
+act4_scene3_speech699,4,3,Ghost,9,89,89
+act4_scene3_speech700,4,3,Brutus   W,7,89,89
+act4_scene3_speech702,4,3,Brutus,32,89,89
+act4_scene3_speech703,4,3,Lucius     T,7,89,89
+act4_scene3_speech704,4,3,Brutus,10,89,89
+act4_scene3_speech706,4,3,Brutus,9,89,89
+act4_scene3_speech707,4,3,Lucius,11,89,89
+act4_scene3_speech708,4,3,Brutus,8,89,89
+act4_scene3_speech709,4,3,Lucius   N,3,89,89
+act4_scene3_speech710,4,3,Brutus,12,89,89
+act4_scene3_speech713,4,3,Brutus,10,89,89
+act4_scene3_speech714,4,3,Both,4,89,89
+act4_scene3_speech717,4,3,Claudius   N,4,90,90
+act4_scene3_speech718,4,3,Brutus,20,90,90
+act5_sceneNone_speech720,5,3,STAGE,6,91,91
+act5_sceneNone_speech721,5,3,Octavius,45,91,91
+act5_sceneNone_speech722,5,3,Antony,47,91,91
+act5_sceneNone_speech723,5,3,Messenger     P,24,91,91
+act5_sceneNone_speech724,5,3,Antony,14,91,91
+act5_scene1_speech725,5,1,Octavius,9,92,92
+act5_scene1_speech726,5,1,Antony,9,92,92
+act5_scene1_speech727,5,1,Octavius,12,92,92
+act5_scene1_speech728,5,1,Brutus   T,6,92,92
+act5_scene1_speech729,5,1,Cassius,8,92,92
+act5_scene1_speech730,5,1,Octavius,8,92,92
+act5_scene1_speech731,5,1,Antony,16,92,92
+act5_scene1_speech732,5,1,Octavius,13,92,92
+act5_scene1_speech733,5,1,Brutus,7,92,92
+act5_scene1_speech734,5,1,Octavius,9,92,92
+act5_scene1_speech735,5,1,Brutus,9,92,92
+act5_scene1_speech736,5,1,Antony,22,92,92
+act5_scene1_speech737,5,1,Cassius     A,22,92,92
+act5_scene1_speech738,5,1,Antony   N,3,92,92
+act5_scene1_speech739,5,1,Brutus   O,4,92,92
+act5_scene1_speech740,5,1,STAGE,14,93,93
+act5_scene1_speech741,5,1,Antony,49,93,93
+act5_scene1_speech742,5,1,Cassius,16,93,93
+act5_scene1_speech743,5,1,Octavius,58,93,93
+act5_scene1_speech744,5,1,Brutus,15,93,93
+act5_scene1_speech746,5,1,Brutus,8,93,93
+act5_scene1_speech747,5,1,Cassius,7,93,93
+act5_scene1_speech748,5,1,Antony,3,93,93
+act5_scene1_speech749,5,1,Octavius     C,3,93,93
+act5_scene1_speech750,5,1,STAGE,28,94,94
+act5_scene1_speech751,5,1,Cassius,19,94,94
+act5_scene1_speech752,5,1,Brutus,13,94,94
+act5_scene1_speech755,5,1,Messala     W,4,94,94
+act5_scene1_speech756_sen1,5,1,Cassius     M,12,94,94
+act5_scene1_speech756_sen2,5,1,Cassius     M,5,94,94
+act5_scene1_speech756_sen3,5,1,Cassius     M,22,94,94
+act5_scene1_speech756_sen4,5,1,Cassius     M,10,94,94
+act5_scene1_speech756_sen5,5,1,Cassius     M,12,94,94
+act5_scene1_speech756_sen6,5,1,Cassius     M,28,94,94
+act5_scene1_speech756_sen7,5,1,Cassius     M,31,94,94
+act5_scene1_speech756_sen8,5,1,Cassius     M,12,94,94
+act5_scene1_speech757,5,1,Messala,3,94,94
+act5_scene1_speech758,5,1,Cassius     I,19,95,95
+act5_scene1_speech759,5,1,Brutus,7,95,95
+act5_scene1_speech760,5,1,Cassius     N,62,95,95
+act5_scene1_speech761,5,1,Brutus,62,95,95
+act5_scene1_speech762,5,1,Cassius   T,20,95,95
+act5_scene1_speech763,5,1,Brutus,72,95,95
+act5_scene3_speech764,5,3,Cassius,22,96,96
+act5_scene3_speech765,5,3,Brutus,41,96,96
+act5_scene3_speech766,5,3,Brutus,61,96,96
+act5_scene3_speech767,5,3,Cassius,15,96,96
+act5_scene3_speech768,5,3,Titinius,24,97,97
+act5_scene3_speech769,5,3,Pindarus,23,97,97
+act5_scene3_speech770,5,3,Cassius,16,97,97
+act5_scene3_speech771,5,3,Titinius,4,97,97
+act5_scene3_speech772,5,3,Cassius     T,39,97,97
+act5_scene3_speech773,5,3,Cassius,52,97,97
+act5_scene3_speech774,5,3,Pindarus,7,97,97
+act5_scene3_speech776,5,3,Pindarus,5,97,97
+act5_scene3_speech777,5,3,STAGE,37,98,98
+act5_scene3_speech778_sen1,5,3,Cassius   C,14,98,98
+act5_scene3_speech778_sen2,5,3,Cassius   C,3,98,98
+act5_scene3_speech778_sen3,5,3,Cassius   C,3,98,98
+act5_scene3_speech778_sen4,5,3,Cassius   C,27,98,98
+act5_scene3_speech778_sen5,5,3,Cassius   C,5,98,98
+act5_scene3_speech778_sen6,5,3,Cassius   C,17,98,98
+act5_scene3_speech778_sen7,5,3,Cassius   C,4,98,98
+act5_scene3_speech778_sen8,5,3,Cassius   C,18,98,98
+act5_scene3_speech778_sen9,5,3,Cassius   C,3,98,98
+act5_scene3_speech778_sen10,5,3,Cassius   C,11,98,98
+act5_scene3_speech778_sen11,5,3,Cassius   C,2,98,98
+act5_scene3_speech779,5,3,Pindarus,38,98,98
+act5_scene3_speech780,5,3,Messala,19,98,98
+act5_scene3_speech781,5,3,Titinius,6,99,99
+act5_scene3_speech782,5,3,Messala,6,99,99
+act5_scene3_speech783,5,3,Titinius     A,9,99,99
+act5_scene3_speech784,5,3,Messala,9,99,99
+act5_scene3_speech785,5,3,Titinius,9,99,99
+act5_scene3_speech786,5,3,Messala,5,99,99
+act5_scene3_speech788,5,3,Messala,41,99,99
+act5_scene3_speech789,5,3,Titinius,7,99,99
+act5_scene3_speech790,5,3,Messala,42,99,99
+act5_scene3_speech791_sen1,5,3,Titinius     H,11,100,100
+act5_scene3_speech791_sen2,5,3,Titinius     H,2,100,100
+act5_scene3_speech791_sen3,5,3,Titinius     H,8,100,100
+act5_scene3_speech791_sen4,5,3,Titinius     H,24,100,100
+act5_scene3_speech791_sen5,5,3,Titinius     H,6,100,100
+act5_scene3_speech791_sen6,5,3,Titinius     H,5,100,100
+act5_scene3_speech791_sen7,5,3,Titinius     H,9,100,100
+act5_scene3_speech791_sen8,5,3,Titinius     H,6,100,100
+act5_scene3_speech791_sen9,5,3,Titinius     H,31,100,100
+act5_scene3_speech791_sen10,5,3,Titinius     H,7,100,100
+act5_scene3_speech791_sen11,5,3,Titinius     H,5,100,100
+act5_scene3_speech791_sen12,5,3,Titinius     H,1,100,100
+act5_scene3_speech791_sen13,5,3,Titinius     H,12,100,100
+act5_scene3_speech792,5,3,Brutus,7,100,100
+act5_scene3_speech793,5,3,Messala,6,100,100
+act5_scene3_speech794,5,3,Brutus,4,100,100
+act5_scene3_speech796,5,3,Brutus,15,100,100
+act5_scene3_speech797,5,3,Cato     B,10,100,100
+act5_scene3_speech798,5,3,Brutus,17,100,100
+act5_scene4_speech799,5,4,STAGE,87,101,101
+act5_scene4_speech800,5,4,Brutus,13,101,101
+act5_scene4_speech801,5,4,Cato,13,101,101
+act5_scene4_speech802,5,4,Lucilius,18,101,101
+act5_scene4_speech803,5,4,STAGE,15,102,102
+act5_scene4_speech804,5,4,First  Soldier,7,102,102
+act5_scene4_speech805,5,4,Lucilius     O,26,102,102
+act5_scene4_speech806,5,4,First  Soldier,8,102,102
+act5_scene4_speech807,5,4,Second Soldier,7,102,102
+act5_scene4_speech808,5,4,First Soldier,8,102,102
+act5_scene4_speech809,5,4,Antony   W,4,102,102
+act5_scene4_speech810,5,4,Lucilius,39,102,102
+act5_scene4_speech811,5,4,Antony,49,102,102
+act5_scene5_speech812,5,5,STAGE,7,103,103
+act5_scene5_speech813,5,5,Brutus,12,103,103
+act5_scene5_speech814,5,5,Clitus,17,103,103
+act5_scene5_speech815,5,5,Brutus,21,103,103
+act5_scene5_speech816,5,5,Clitus,10,103,103
+act5_scene5_speech817,5,5,Brutus,4,103,103
+act5_scene5_speech818,5,5,Clitus     I,4,103,103
+act5_scene5_speech819,5,5,Brutus,7,103,103
+act5_scene5_speech820,5,5,Dardanus     S,8,103,103
+act5_scene5_speech822,5,5,Dardanus   O C,6,103,103
+act5_scene5_speech823,5,5,Clitus,8,103,103
+act5_scene5_speech824,5,5,Dardanus,7,103,103
+act5_scene5_speech825,5,5,Clitus,16,103,103
+act5_scene5_speech826,5,5,Brutus,7,103,103
+act5_scene5_speech827,5,5,Volumnius,4,103,103
+act5_scene5_speech828,5,5,Brutus     W,3,103,103
+act5_scene5_speech829,5,5,STAGE,23,104,104
+act5_scene5_speech830,5,5,Volumnius     N,4,104,104
+act5_scene5_speech831,5,5,Brutus,69,104,104
+act5_scene5_speech832,5,5,Volumnius,11,104,104
+act5_scene5_speech833,5,5,Clitus,9,104,104
+act5_scene5_speech834,5,5,Brutus,80,104,104
+act5_scene5_speech835,5,5,Clitus,4,104,104
+act5_scene5_speech836,5,5,Brutus     H,10,104,104
+act5_scene5_speech837,5,5,STAGE,36,105,105
+act5_scene5_speech838,5,5,Strato,10,105,105
+act5_scene5_speech839,5,5,Brutus,22,105,105
+act5_scene5_speech840,5,5,Octavius   W,4,105,105
+act5_scene5_speech841,5,5,Messala,7,105,105
+act5_scene5_speech842,5,5,Strato,31,105,105
+act5_scene5_speech843,5,5,Lucilius,16,105,105
+act5_scene5_speech844,5,5,Octavius,16,105,105
+act5_scene5_speech845,5,5,Strato,8,105,105
+act5_scene5_speech846,5,5,Octavius,4,105,105
+act5_scene5_speech847,5,5,Messala     H,6,105,105
+act5_scene5_speech848,5,5,Messala,15,106,106
+act5_scene5_speech849,5,5,Antony,65,106,106
+act5_scene5_speech850,5,5,Octavius,49,106,106

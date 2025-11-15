@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # Service 1: The RAG API Backend
+  rag-api:
+    build:
+      context: ./api_rag
+      dockerfile: Dockerfile
+    container_name: shakespearean-scholar
+    restart: always
+    # REMOVED: External port mapping 8000:8000. 
+    # The UI talks to this service using its internal name (rag-api) on port 8000.
+    env_file:
+      - ./.env
+    ports: # <-- ENSURE THIS IS PRESENT for external connectivity
+      - "8000:8000"
+    volumes:
+      # Mount the local chroma_db folder into the container's /app directory
+      - ./chroma_db:/app/chroma_db
+      
+      # Optional: Mount Hugging Face cache
+      - ~/.cache/huggingface:/root/.cache/huggingface
+    
+    entrypoint: 
+      ["/bin/bash", "-c", 
+       "python -c 'from transformers import AutoModel, AutoTokenizer; AutoModel.from_pretrained(\"BAAI/bge-base-en-v1.5\", trust_remote_code=True); AutoTokenizer.from_pretrained(\"BAAI/bge-base-en-v1.5\", trust_remote_code=True)' && uvicorn api_rag:app --host 0.0.0.0 --port 8000"
+      ]
+
+  # 🌟 Service 2: Streamlit Frontend UI (NEW SERVICE) 🌟
+  streamlit-ui:
+    build:
+      context: ./frontend_ui  # Assumes your UI files are in this directory
+      dockerfile: Dockerfile  # Assumes the Dockerfile for the UI is here
+    container_name: scholar-frontend
+    restart: always
+    ports:
+      - "8501:8501"           # Map Streamlit's default port to host
+    volumes:
+      # Mount the UI files for easy updates
+      - ./frontend_ui:/app
+    depends_on:
+      - rag-api               # Ensure the RAG backend starts before the UI
+    # Command to run the Streamlit app
+    command: streamlit run frontend.py --server.port 8501 --server.address 0.0.0.0
