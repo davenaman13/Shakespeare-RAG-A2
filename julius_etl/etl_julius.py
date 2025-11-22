@@ -312,7 +312,7 @@ def parse_pdf(path: Path):
         else:
             merged.append(c)
     
-    # 🌟 NEW CHUNKING LOGIC FOR SHORT FACTOIDS AND QUOTES 🌟
+    # ////////// NEW CHUNKING LOGIC FOR SHORT FACTOIDS AND QUOTES 
     # This logic splits smaller chunks (below WORD_SPLIT_THRESHOLD) into sentences 
     # if they are still too long (over SENTENCE_SPLIT_THRESHOLD).
     final_post_split = []
