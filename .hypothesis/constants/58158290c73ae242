@@ -1,0 +1,4 @@
+# file: /Users/apple/Desktop/AdvNLP_Assignment2/api_rag/api_rag.py
+# hypothesis_version: 6.148.2
+
+[0.0, 1e-09, 500, 1024, '..', '.env', '/', '/app/chroma_db', '/docs', '/query', 'GEMINI_API_KEY', 'answer', 'attention_mask', 'chunk', 'context', 'cpu', 'cuda', 'docs_link', 'documents', 'gemini-2.5-flash', 'human', 'julius_caesar', 'metadata', 'metadatas', 'pt', 'question', 'sources', 'status', 'system']

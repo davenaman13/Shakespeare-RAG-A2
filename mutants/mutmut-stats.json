@@ -1,0 +1,36 @@
+{
+    "tests_by_mangled_function_name": {
+        "julius_etl.etl_julius.x_clean_page_text": [
+            "tests/test_etl.py::test_clean_page_text_removes_ftln",
+            "tests/test_etl.py::test_parse_pdf_logic_flow"
+        ],
+        "julius_etl.etl_julius.x_sanitize_text": [
+            "tests/test_etl.py::test_sanitize_text_keeps_clean_text",
+            "tests/test_etl.py::test_parse_pdf_logic_flow",
+            "tests/test_etl.py::test_sanitize_text_removes_headers"
+        ],
+        "julius_etl.etl_julius.x_roman_to_int": [
+            "tests/test_etl.py::test_roman_to_int_invalid_returns_input",
+            "tests/test_etl.py::test_roman_to_int_valid",
+            "tests/test_etl.py::test_parse_pdf_logic_flow"
+        ],
+        "julius_etl.etl_julius.x_build_page_map": [
+            "tests/test_etl.py::test_parse_pdf_logic_flow"
+        ],
+        "julius_etl.etl_julius.x_parse_pdf": [
+            "tests/test_etl.py::test_parse_pdf_logic_flow"
+        ],
+        "julius_etl.etl_julius.x_add_chunk": [
+            "tests/test_etl.py::test_parse_pdf_logic_flow"
+        ]
+    },
+    "duration_by_test": {
+        "tests/test_etl.py::test_clean_page_text_removes_ftln": 0.000266874999852007,
+        "tests/test_etl.py::test_sanitize_text_removes_headers": 0.00013541699945562868,
+        "tests/test_etl.py::test_sanitize_text_keeps_clean_text": 0.00010212400047748815,
+        "tests/test_etl.py::test_roman_to_int_valid": 9.720800017021247e-05,
+        "tests/test_etl.py::test_roman_to_int_invalid_returns_input": 9.116600040215417e-05,
+        "tests/test_etl.py::test_parse_pdf_logic_flow": 0.0015649990000383696
+    },
+    "stats_time": 6.991289
+}
