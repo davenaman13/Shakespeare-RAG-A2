@@ -1,91 +1,108 @@
+import sys
+import os
+# --- PATH FIX ---
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# ----------------
+
 import pytest
+import torch
 from unittest.mock import MagicMock, patch
-from julius_etl.api_rag import perform_rag_search, validate_rag_input, format_context
+from fastapi.testclient import TestClient
+
+# 1. Correct Import Path: We import from 'api_rag' folder, not 'julius_etl'
+# 2. Mock Heavy Libraries: We prevent PyTorch/Chroma from loading during tests
+with patch('api_rag.api_rag.AutoTokenizer'), \
+     patch('api_rag.api_rag.AutoModel'), \
+     patch('api_rag.api_rag.chromadb'), \
+     patch('api_rag.api_rag.ChatGoogleGenerativeAI'):
+    from api_rag.api_rag import app, RAGSystem
+
+client = TestClient(app)
 
 # ==============================================================================
-# 1. INPUT VALIDATION LOGIC (Kills 'and -> or' mutants)
+# 1. ERROR HANDLING TRAPS (Kills 'if x is None' -> 'if x is not None')
 # ==============================================================================
 
-def test_validate_rag_input_kills_boolean_mutants():
+@patch('api_rag.api_rag.rag_system', None) # Force System to be None
+@patch('api_rag.api_rag.startup_error', "Init Failed")
+def test_api_trap_startup_failure():
     """
-    Target: if query and context:
-    Mutant: if query or context:
+    Trap: The code says `if rag_system is None: raise HTTPException`.
+    Mutant: `if rag_system is NOT None: raise` (Logic Inversion).
+    """
+    # Action: Call the endpoint
+    response = client.post("/query", json={"query": "Test"})
     
-    We test cases where ONLY ONE is present. 
-    - Original (AND) should fail/return False.
-    - Mutant (OR) would pass/return True.
-    """
-    # Case 1: Only Query provided (Context missing)
-    # Original: False. Mutant: True.
-    assert validate_rag_input("Who is Brutus?", "") is False, "Mutant (OR) survived: Accepted query without context"
-
-    # Case 2: Only Context provided (Query missing)
-    # Original: False. Mutant: True.
-    assert validate_rag_input("", "Brutus is a noble Roman.") is False, "Mutant (OR) survived: Accepted context without query"
-
-    # Case 3: Both missing
-    assert validate_rag_input("", "") is False
-
-    # Case 4: Both present (Happy Path)
-    assert validate_rag_input("Who?", "Context") is True
+    # Trap: Original logic MUST raise 500 if system is None.
+    # A mutant that flips this logic will return 200 OK or crash differently.
+    assert response.status_code == 500, "Mutant survived: Failed to catch uninitialized RAG system"
+    assert "Init Failed" in response.json()["detail"]
 
 # ==============================================================================
-# 2. BOOLEAN LOGIC IN SEARCH/FILTERING (Kills 'or -> and' / 'True -> False')
+# 2. FORMATTING TRAPS (Kills String Logic Mutants)
 # ==============================================================================
 
-@patch('julius_etl.api_rag.genai.GenerativeModel')
-def test_perform_rag_search_logic_flow(mock_model_class):
+def test_retrieve_formatting_trap():
     """
-    Kills mutants in the search logic flow (lines 60-100).
-    Targets: 
-    - (a or b) logic in prompt construction.
-    - Return value mutants (True -> False).
+    Trap: The loop formats context as `--- Act {act}, Scene {scene} ...`.
+    Mutant: Might drop the `---` or the `Act` keyword or change logic order.
     """
-    # Setup Mock
-    mock_model_instance = mock_model_class.return_value
-    mock_response = MagicMock()
-    mock_response.text = "Caesar died."
-    mock_model_instance.generate_content.return_value = mock_response
-
-    # --- Test 1: Complex Filtering Logic ---
-    # Assume logic: if (strict_mode or valid_key) and not error:
-    # We simulate 'strict_mode=False' but 'valid_key=True'.
-    # Mutant (and) would fail. Original (or) passes.
-    result = perform_rag_search(
-        query="Death of Caesar", 
-        context="Historical records...",
-        strict_mode=False  # Crucial for killing 'and' mutants in defaults
-    )
-    assert result['status'] == 'success'
-    assert result['answer'] == "Caesar died."
-
-    # --- Test 2: Error Handling Logic (Kills True -> False) ---
-    # Force an API error. 
-    # Logic: return {"status": "error", "valid": False}
-    # Mutant: return {"status": "error", "valid": True} (flipped boolean)
-    mock_model_instance.generate_content.side_effect = Exception("API Down")
+    # Create instance without calling __init__ (avoids loading models)
+    rag = RAGSystem.__new__(RAGSystem)
+    rag.tokenizer = MagicMock()
+    rag.model = MagicMock()
     
-    error_result = perform_rag_search("Q", "C")
+    # Mock Collection Query Result (Simulating ChromaDB response)
+    rag.collection = MagicMock()
+    # Logic requires matching lists of documents and metadatas
+    rag.collection.query.return_value = {
+        "documents": [["Chunk Text content"]],
+        "metadatas": [[{"act": "1", "scene": "2", "speaker": "Cassius"}]]
+    }
     
-    # Assert EXACT values to kill boolean flip mutants
-    assert error_result['status'] == 'error'
-    assert error_result.get('valid_response') is False, "Mutant survived: Error state reported valid=True"
+    # Mock Embedder to return dummy array (skips math)
+    rag._embed_text = MagicMock(return_value=MagicMock(tolist=lambda: [[0.1]]))
+
+    # Call the method directly
+    context, sources = rag.retrieve("Query")
+    
+    # The Trap: Verify specific string formatting logic
+    assert "--- Act 1, Scene 2" in context, "Mutant survived: Formatting logic broken (Act/Scene missing)"
+    assert "(Speaker: Cassius)" in context, "Mutant survived: Formatting logic broken (Speaker missing)"
+    assert len(sources) == 1
 
 # ==============================================================================
-# 3. PROMPT FORMATTING (Kills String/Logic Mutants)
+# 3. MATH TRAPS (Kills Pytorch/Math mutants)
 # ==============================================================================
 
-def test_format_context_logic():
+def test_embed_text_math_logic():
     """
-    Targets logic: if source and text: format string
-    Mutant: if source or text: format string
+    Trap: _embed_text uses mean pooling: (hidden * mask).sum(1) / mask.sum(1)
+    Mutants: Change * to +, sum(1) to sum(0), division to multiplication.
     """
-    # Case: Missing source, present text
-    # Should probably fallback to generic or return clean text
-    chunk = {"text_content": "Hello", "source": ""}
-    formatted = format_context(chunk)
+    rag = RAGSystem.__new__(RAGSystem)
+    rag.tokenizer = MagicMock()
+    rag.model = MagicMock()
+    rag.DEVICE = "cpu"
+
+    # Setup Mock Tensors
+    # Shape: Batch=1, Tokens=2, Dim=2
+    # Token 1: [1.0, 2.0]
+    # Token 2: [3.0, 4.0]
+    mock_out = MagicMock()
+    mock_out.last_hidden_state = torch.tensor([[[1.0, 2.0], [3.0, 4.0]]]) 
     
-    # If mutant uses 'or', it might format weirdly like "Source: None \n Hello"
-    # Original likely handles it gracefully
-    assert "Unknown Source" not in formatted or "None" not in formatted
-    assert "Hello" in formatted
+    rag.model.return_value = mock_out
+    # Mask: Both tokens are valid (1, 1)
+    rag.tokenizer.return_value = {"attention_mask": torch.tensor([[1, 1]])} 
+
+    # Execute
+    # Expected Math: Mean of [1,2] and [3,4]
+    # Token 1 + Token 2 = [4.0, 6.0]
+    # Divide by 2 = [2.0, 3.0]
+    vector = rag._embed_text("Test")
+    
+    # Assertions
+    assert vector.shape == (2,), "Mutant survived: Wrong output shape"
+    assert vector[0] == 2.0, "Mutant survived: Math logic error (First dimension mean wrong)"
+    assert vector[1] == 3.0, "Mutant survived: Math logic error (Second dimension mean wrong)"
