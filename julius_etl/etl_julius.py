@@ -13,9 +13,9 @@ OUT_JSONL = Path("julius_chunks.jsonl")
 OUT_CSV = Path("julius_chunks_summary.csv")
 OUT_SAMPLE = Path("julius_chunks_sample.txt")
 
-# Global definitions to be added or modified:
+# Global definitions
 WORD_SPLIT_THRESHOLD=900
-SENTENCE_SPLIT_THRESHOLD=100  # New threshold for aggressive splitting
+SENTENCE_SPLIT_THRESHOLD=100
 SOLILOQUY_MIN_WORDS=120
 
 # Regexes
@@ -42,24 +42,20 @@ HEADER_LINE_REs = [
 
 SINGLE_LETTER_LINE = re.compile(r'^\s*[A-Z]\s*(Act|ACT)?\b.*$', re.I)
 LEADING_PAGE_RE = re.compile(r'^\s*\d+\s*[-–—]?\s*')
-SINGLE_LET_LEAD = re.compile(r'(?m)^\s*[A-Z]\s+(?=[a-z])')  # "W hat" -> remove leading letter+space
+SINGLE_LET_LEAD = re.compile(r'(?m)^\s*[A-Z]\s+(?=[a-z])')
 
 INTRO_MARKERS = ["Textual Introduction", "Barbara Mowat", "Paul Werstine", "The Folger Shakespeare", "Moby", "digital text", "Folger"]
 INTRO_RE = re.compile("|".join(re.escape(s) for s in INTRO_MARKERS), re.I)
 
-# Enhanced sanitization patterns
-ISOLATED_NUM_RE = re.compile(r'(?m)^\s*\d{1,4}\s*$')  # whole-line small numbers
-INLINE_SMALL_NUM_RE = re.compile(r'(?<=\s)\d{1,4}(?=\s|[.,;:\)\-—])')  # inline small numbers before space or punctuation
+ISOLATED_NUM_RE = re.compile(r'(?m)^\s*\d{1,4}\s*$')
+INLINE_SMALL_NUM_RE = re.compile(r'(?<=\s)\d{1,4}(?=\s|[.,;:\)\-—])')
 ACT_SC_INLINE_RE = re.compile(r'\bACT\s+[IVXLC\d]+(?:\.\s*)?(?:SC(?:\.|ENE)?\.?\s*[IVXLC\d]+)?\b', re.I)
 ACT_SC_WORDS_RE = re.compile(r'\bAct\s+[IVXLC\d]+(?:\s+Scene\s+[IVXLC\d]+)?\b', re.I)
 ISOLATED_LETTER_LINE = re.compile(r'(?m)^\s*[A-Z]\s*$', re.M)
 ISOLATED_LETTER_LEAD = re.compile(r'(?m)^\s*[A-Z]\s+(?=[A-Za-z])')
-# Remove single-letter tokens that appear immediately before "Act" or "Scene" (e.g., "G Act 4")
 LEADING_SINGLE_LET_BEFORE_ACT = re.compile(r'(?m)\b[A-Z]\s+(?=(?:Act|ACT|SCENE|SC\.)\b)', re.I)
-# Also remove single-letter tokens that appear anywhere before an "Act" word sequence
 SINGLE_LET_BEFORE_ACT_INLINE = re.compile(r'\b[A-Z]\s+(?=Act\b|ACT\b|SCENE\b|SC\.)', re.I)
 
-# utilities
 def roman_to_int(s):
     s = str(s).upper()
     roman_map = {'I':1,'II':2,'III':3,'IV':4,'V':5,'VI':6,'VII':7,'VIII':8,'IX':9,'X':10}
@@ -72,23 +68,26 @@ def sanitize_text(text: str) -> str:
     if not text:
         return ""
     txt = text
-    txt = ISOLATED_NUM_RE.sub("", txt)  # whole-line numbers
-    txt = ISOLATED_LETTER_LINE.sub("", txt)  # isolated letter lines
-    txt = ISOLATED_LETTER_LEAD.sub("", txt)  # leading single-letter-word splits e.g., "H ear"
-    # remove single letters that come directly before Act/Scene tokens
-    txt = LEADING_SINGLE_LET_BEFORE_ACT.sub("", txt)
-    txt = SINGLE_LET_BEFORE_ACT_INLINE.sub("", txt)
-    # remove small inline numeric tokens (before space or punctuation)
-    txt = INLINE_SMALL_NUM_RE.sub("", txt)
-    # remove embedded ACT/SCENE phrases
+    # --- FIX: Sanitization Order Reordered for Correctness ---
+    # 1. Remove specific Act/Scene headers FIRST (before numbers are stripped)
     txt = ACT_SC_INLINE_RE.sub("", txt)
     txt = ACT_SC_WORDS_RE.sub("", txt)
-    # collapse whitespace
+    
+    # 2. Remove isolated/leading artifacts
+    txt = ISOLATED_NUM_RE.sub("", txt)
+    txt = ISOLATED_LETTER_LINE.sub("", txt)
+    txt = ISOLATED_LETTER_LEAD.sub("", txt)
+    txt = LEADING_SINGLE_LET_BEFORE_ACT.sub("", txt)
+    txt = SINGLE_LET_BEFORE_ACT_INLINE.sub("", txt)
+    
+    # 3. Remove small inline numbers LAST
+    txt = INLINE_SMALL_NUM_RE.sub("", txt)
+    
+    # 4. Collapse whitespace
     txt = re.sub(r'\s{2,}', ' ', txt)
     txt = re.sub(r'\n{3,}', '\n\n', txt)
     return txt.strip()
 
-# build page map
 def build_page_map(pdf_path: Path):
     page_map = {}
     last_act = None
@@ -238,7 +237,6 @@ def parse_pdf(path: Path):
                     cid = f"act{current_act}_scene{current_scene}_speech{next(chunk_counter)}"
                     add_chunk(chunks, cid, current_act, current_scene, stage_text, "STAGE", pno)
                 i = j
-    # in-script defensive cleaning
     def clean_chunk_text(t):
         if not t: return ""
         lines = t.splitlines(); out=[]
@@ -263,7 +261,6 @@ def parse_pdf(path: Path):
         c['text'] = clean_chunk_text(c.get('text',''))
         sp = c.get('speaker') or ""
         c['speaker'] = sp.strip() if isinstance(sp,str) else sp
-    # infer scene from chunk text if missing
     for c in chunks:
         if c.get('scene') is None:
             head = (c.get('text') or "")[:400]
@@ -276,7 +273,6 @@ def parse_pdf(path: Path):
             if m2:
                 try: c['scene'] = roman_to_int(m2.group(1))
                 except: pass
-    # fill missing act/scene by nearest neighbor
     for idx, c in enumerate(chunks):
         if c.get('act') is None or c.get('scene') is None:
             for j in range(idx-1, -1, -1):
@@ -286,7 +282,6 @@ def parse_pdf(path: Path):
                 for j in range(idx+1, len(chunks)):
                     if chunks[j].get('act') is not None and chunks[j].get('scene') is not None:
                         c['act'] = c['act'] or chunks[j]['act']; c['scene'] = c['scene'] or chunks[j]['scene']; break
-    # repair bad speakers inline
     def is_bad_speaker(name):
         if not name or not isinstance(name,str): return True
         n = name.strip()
@@ -304,28 +299,19 @@ def parse_pdf(path: Path):
                     if chunks[j]['act']==c['act'] and chunks[j]['scene']==c['scene'] and not is_bad_speaker(chunks[j].get('speaker')):
                         assigned = chunks[j].get('speaker'); break
             c['speaker'] = assigned if assigned else "STAGE"
-    # merge tiny artifacts
     merged=[]
     for c in chunks:
         if merged and len(c.get('text','').split()) <= 2:
             merged[-1]['text'] = (merged[-1]['text'] + " " + c.get('text','')).strip()
         else:
             merged.append(c)
-    
-    # ////////// NEW CHUNKING LOGIC FOR SHORT FACTOIDS AND QUOTES 
-    # This logic splits smaller chunks (below WORD_SPLIT_THRESHOLD) into sentences 
-    # if they are still too long (over SENTENCE_SPLIT_THRESHOLD).
     final_post_split = []
-    
     for c in merged:
         words = c.get('text','').split()
         c['is_soliloquy'] = (c['speaker'] != "STAGE") and (len(words) >= SOLILOQUY_MIN_WORDS)
-        
         if len(words) > WORD_SPLIT_THRESHOLD:
-            # Handle very large chunks by paragraph/default logic (existing)
-            parts = re.split(r'(?<=[.?!])\s+(?=[A-Z])', c['text']) # Sentence-aware split
+            parts = re.split(r'(?<=[.?!])\s+(?=[A-Z])', c['text']) 
             if len(parts) == 1:
-                # If still too big after sentence split, revert to word split
                 w = words
                 nparts = math.ceil(len(w)/800)
                 per = math.ceil(len(w)/nparts)
@@ -338,9 +324,7 @@ def parse_pdf(path: Path):
                     p = p.strip()
                     if p:
                         new=c.copy(); new['text']=p; new['chunk_id']=c['chunk_id'] + f"_part{idx}"; final_post_split.append(new)
-        
         elif len(words) > SENTENCE_SPLIT_THRESHOLD and c['speaker'] != "STAGE":
-            # Aggressively split medium-sized speeches (likely dialogues) into sentences
             parts = re.split(r'(?<=[.?!])\s+(?=[A-Z])', c['text']) 
             if len(parts) > 1:
                 for idx, p in enumerate(parts, start=1):
@@ -349,13 +333,10 @@ def parse_pdf(path: Path):
                         new=c.copy(); new['text']=p; new['chunk_id']=c['chunk_id'] + f"_sen{idx}"; final_post_split.append(new)
             else:
                 final_post_split.append(c)
-        
         else:
             final_post_split.append(c)
-            
-    # assign char offsets
     pos=0
-    final = final_post_split # Use the post-split list for final processing
+    final = final_post_split
     for c in final:
         txt = c.get('text','') or ""
         c['char_start'] = pos; c['char_end'] = pos + len(txt)
