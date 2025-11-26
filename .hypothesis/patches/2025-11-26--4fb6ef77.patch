@@ -1,0 +1,18 @@
+From HEAD Mon Sep 17 00:00:00 2001
+From: Hypothesis 6.148.2 <no-reply@hypothesis.works>
+Date: Wed, 26 Nov 2025 15:06:56
+Subject: [PATCH] Hypothesis: add explicit examples
+
+---
+--- ./tests_fuzz/test_api_fuzz.py
++++ ./tests_fuzz/test_api_fuzz.py
+@@ -82,6 +82,9 @@
+         assert response.status_code in [200, 422]
+ 
+ @given(st.dictionaries(st.text(), st.text()))
++@example(
++    random_json={'query': ''},
++).via('discovered failure')
+ def test_fuzz_api_endpoint_json_structure(random_json):
+     """
+     Property: Sending random JSON dictionaries (wrong keys) 
