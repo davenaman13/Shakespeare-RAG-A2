@@ -1,89 +1,88 @@
+import sys
+import os
+# --- PATH FIX ---
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# ----------------
+
 import pytest
+import requests
 from unittest.mock import MagicMock, patch
 import sys
 
-# Mock streamlit before importing frontend to avoid "No browser" errors
+# 1. Mock Streamlit BEFORE import
 sys.modules['streamlit'] = MagicMock()
 import streamlit as st
-from julius_etl.frontend import render_sidebar, update_ui_state, main_layout
+
+# 2. Correct Import from frontend_ui/frontend.py
+from frontend_ui.frontend import query_rag_api, main
 
 # ==============================================================================
-# 1. STATE LOGIC MUTANTS (Kills '== -> !=')
+# 1. API WRAPPER TRAPS (query_rag_api)
 # ==============================================================================
 
-def test_update_ui_state_equality_logic():
+def test_query_api_logic_inversion_trap():
     """
-    Target: if st.session_state.page == 'home':
-    Mutant: if st.session_state.page != 'home':
-    
-    We set state to 'home'. 
-    - Original: Enters block.
-    - Mutant: Skips block.
+    Target: `if not user_query: return None`
+    Mutant: `if user_query: return None` (Logic Inversion via 'not' removal)
+    or `if True: return None` (Force exit)
     """
-    # Setup State
-    st.session_state = {'page': 'home', 'processed': False}
-    
-    # Call function
-    update_ui_state(target_page='analysis')
-    
-    # Verify State Change
-    # If mutant (!=) was active, checking 'home' != 'home' is False, logic skipped.
-    assert st.session_state['page'] == 'analysis', "Mutant survived: State update logic skipped due to equality flip"
-
-def test_ui_visibility_logic():
-    """
-    Target: if status == 'success': show_results()
-    Mutant: if status != 'success': show_results()
-    """
-    st.session_state = {'status': 'error'}
-    
-    # We pretend to run the layout
-    # If mutant is active (!= success), it will try to show results even on error.
-    with patch('julius_etl.frontend.st.success') as mock_success:
-        with patch('julius_etl.frontend.st.error') as mock_error:
-            # Assume a function that renders based on state
-            main_layout()
-            
-            # Original: Should show error, NOT success
-            mock_error.assert_called()
-            mock_success.assert_not_called() 
-
-# ==============================================================================
-# 2. INTERACTION LOGIC (Kills 'and -> or')
-# ==============================================================================
-
-def test_button_interaction_logic():
-    """
-    Target: if st.button('Search') and query:
-    Mutant: if st.button('Search') or query:
-    
-    Scenario: User types query but DOES NOT click button.
-    - Original: Do nothing.
-    - Mutant: Triggers search immediately (OR logic).
-    """
-    # Mock return values
-    st.button.return_value = False # Button NOT clicked
-    query_input = "Rome"           # Query IS present
-    
-    with patch('julius_etl.frontend.perform_rag_search') as mock_search:
-        # Simulate the render loop
-        render_sidebar() 
+    with patch('requests.post') as mock_post:
+        # Setup success
+        mock_post.return_value.status_code = 200
+        mock_post.return_value.json.return_value = {}
         
-        # Assertion
-        # Original: Button False AND Query True = False. Search NOT called.
-        # Mutant: Button False OR Query True = True. Search CALLED.
-        mock_search.assert_not_called()
+        # Input: Valid string
+        result = query_rag_api("Valid Query", "http://url")
+        
+        # Trap: If logic is inverted, it returns None instead of calling API
+        assert result is not None, "Mutant survived: Valid query blocked by logic inversion"
 
-def test_processing_flag_logic():
+def test_api_timeout_trap():
     """
-    Target: if processing and not completed:
-    Mutant: if processing or not completed:
+    Target: `requests.post(..., timeout=90)`
+    Mutant: Argument `timeout` removed.
     """
-    # Case: Not processing, Not completed.
-    # Original: False.
-    # Mutant: True (because 'not completed' is True).
-    st.session_state = {'is_processing': False, 'is_completed': False}
+    with patch('requests.post') as mock_post:
+        mock_post.return_value.status_code = 200
+        query_rag_api("Test", "http://url")
+        
+        # Trap: Check kwargs for timeout
+        args, kwargs = mock_post.call_args
+        assert 'timeout' in kwargs, "Mutant survived: Timeout argument removed"
+        assert kwargs['timeout'] == 90, "Mutant survived: Timeout value changed"
+
+# ==============================================================================
+# 2. UI LOGIC TRAPS (main)
+# ==============================================================================
+
+def test_main_button_bypass_trap():
+    """
+    Target: `if st.button(...):`
+    Mutant: `if True:` (Forces logic to run without click)
+    """
+    # Setup: Button returns FALSE (Not clicked)
+    st.button.return_value = False
+    st.text_input.return_value = "Valid Question"
     
-    with patch('julius_etl.frontend.st.spinner') as mock_spinner:
-        main_layout()
-        mock_spinner.assert_not_called()
+    with patch('frontend_ui.frontend.query_rag_api') as mock_query:
+        main()
+        
+        # Trap: The API should NOT be called.
+        # If mutant changes `if button` to `if True`, this fails.
+        mock_query.assert_not_called(), "Mutant survived: Logic ran without button click (Flow Control Break)"
+
+def test_main_validation_inversion_trap():
+    """
+    Target: `if not question: st.warning`
+    Mutant: `if question: st.warning` (Logic Inversion)
+    """
+    # Setup: Button Clicked, Question Exists
+    st.button.return_value = True
+    st.text_input.return_value = "Valid Question"
+    
+    with patch('frontend_ui.frontend.query_rag_api') as mock_query:
+        main()
+        
+        # Trap: Should call API.
+        # If mutant inverts logic, it shows warning and skips API.
+        mock_query.assert_called(), "Mutant survived: Valid question triggered warning"
