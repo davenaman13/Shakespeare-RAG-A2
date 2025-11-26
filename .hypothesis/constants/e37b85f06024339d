@@ -1,0 +1,4 @@
+# file: /Users/apple/Desktop/AdvNLP_Assignment2/julius_etl/etl_julius.py
+# hypothesis_version: 6.148.2
+
+[100, 120, 400, 800, 900, '(?m)^\\s*[A-Z]\\s*$', '(?m)^\\s*\\d{1,4}\\s*$', '(\\w+)-\\n(\\w+)', 'A', 'Act counts:', 'Barbara Mowat', 'Folger', 'I', 'II', 'III', 'IV', 'IX', 'Julius Caesar', 'Julius-Caesar.pdf', 'Moby', 'Paul Werstine', 'Reading pages', 'STAGE', 'THE', 'Textual Introduction', 'Top speakers:', 'V', 'VI', 'VII', 'VIII', 'W', 'X', 'Y', '\\1\\2', '\\bFTLN\\s*\\d+\\b', '\\n{3,}', '\\s{2,}', '^\\s*FTLN\\s*\\d+\\s*$', '^\\s*SCENE\\s+\\w+.*$', '^\\s*\\d+\\s*$', '^\\s*\\d+\\s*[-–—]?\\s*', 'act', 'char_end', 'char_start', 'chunk_id', 'digital text', 'end_page', 'is_soliloquy', 'julius_chunks.jsonl', 'play', 'scene', 'speaker', 'start_page', 'text', 'utf8', 'w', 'words', '|']
